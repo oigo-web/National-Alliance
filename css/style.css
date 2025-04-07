@@ -2,9 +2,9 @@
   Template Name: National Alliance
   Description: NAT Event HTML Template
   Author:Asliddin
-  Author URI: http://colorlib.com
+  Author URI: http://oigooi.org
   Version: 1.0
-  Created: Colorlib
+  Created: Asliddin
 ******************************************************************/
 
 /*------------------------------------------------------------------
@@ -52,8 +52,12 @@ h6 {
 	font-family: "Work Sans", sans-serif;
 }
 
+/*---------------------
+  Variables -- added your own variables */
 h1 {
 	font-size: 70px;
+	overflow-wrap: break-word;
+	margin-bottom:1em
 }
 
 h2 {
@@ -83,6 +87,12 @@ p {
 	font-weight: 400;
 	line-height: 28px;
 	margin: 0 0 15px 0;
+}
+
+/* adding ol and ul */
+ol, h1 ul {
+    font-size: var(--heading-6);
+    margin-bottom:1em
 }
 
 img {
@@ -177,17 +187,34 @@ ol {
 
 /* buttons */
 
-.primary-btn {
-	display: inline-block;
-	font-size: 16px;
-	font-weight: 600;
-	padding: 12px 40px;
-	color: #030303;
-	text-align: center;
-	border-radius: 22px;
-	background-image: -webkit-gradient(linear, left top, right top, from(#ee8425), to(#f9488b)), -webkit-gradient(linear, left top, right top, from(#ee8425), to(#f9488b));
-	background-image: -o-linear-gradient(left, #ee8425 0%, #f9488b 100%), -o-linear-gradient(left, #ee8425 0%, #f9488b 100%);
-	background-image: repeating-conic-gradient(#faa904, rgb(247, 167, 5) 40.34%, #f6cd08), linear-gradient(to right, #ee8425 0%, #f9488b 100%);
+.ThemeFlipIcon_icon__dAwiN {
+    cursor: pointer;
+    min-width: 45px;
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    color: var(--gray-100);
+    background-color: var(--gray-900);
+    box-shadow: var(--shadow-elevation-low);
+    transform: scale(.95);
+    border-radius: 5px;
+    transition: color var(--hover-down), box-shadow var(--hover-up), transform var(--hover-down);
+    will-change: transform;
+	
+}
+/* .ThemeFlipIcon_icon__dAwiN:hover {
+    box-shadow: var(--shadow-elevation-medium);
+    transform: scale(1);
+    transition:color var(--hover-up), box-shadow var(--hover-up), transform var(--hover-up)
+} */
+
+.ThemeTags {
+	top: 0;
+	right: 0;
+	display: flex;
+	gap: 10px;
+	position: absolute;
 }
 
 .site-btn {
@@ -267,10 +294,23 @@ ol {
   Header
 -----------------------*/
 
+.header {
+	background: #ffffff;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
 .header-section {
+	/* position: static;
 	display: -webkit-box;
-	display: -ms-flexbox;
+	display: -ms-flexbox; */
 	display: flex;
+	align-items: center;
+
 }
 
 .header-section.header-normal {
@@ -299,7 +339,7 @@ ol {
 	display: inline-block;
 	list-style: none;
 	margin-right: 40px;
-	position: relative;
+	/* position: relative; */
 }
 
 .nav-menu .mainmenu ul li .dropdown {
@@ -307,7 +347,7 @@ ol {
 	width: 180px;
 	background: #ffffff;
 	z-index: 99;
-	left: 0;
+	left: 50%;
 	top: 130px;
 	opacity: 0;
 	visibility: hidden;
@@ -414,6 +454,28 @@ ol {
 	margin-top: 41px;
 	margin-bottom: 101px;
 	letter-spacing: 5px;
+}
+
+/* let's give it chanse and create Terminal */
+.TerminalCursor_cursor__UisQi {
+	display: inline-block;
+	width: 10px;
+	height: 1em;
+	background-color: #53c90f;
+	margin-left: 1px;
+	position: relative;
+	vertical-align: middle;
+	bottom: 0.2em;
+	animation: TerminalCursor_blink__ei3sl 1s infinite;
+}
+@keyframes TerminalCursor_blink__ei3sl {
+    0%, to {
+        background-color: #53c90f;
+    }
+
+    50% {
+        background-color: transparent
+    }
 }
 
 /*---------------------
