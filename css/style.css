@@ -115,8 +115,10 @@ a:focus {
 
 ul,
 ol {
+	list-style: none;
 	padding: 0;
 	margin: 0;
+
 }
 
 /*---------------------
@@ -187,6 +189,18 @@ ol {
 
 /* buttons */
 
+/* .primary-btn top-btn {
+	background: #f44949;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px 40px 12px;
+	border-radius: 50px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+} */
+
 .ThemeFlipIcon_icon__dAwiN {
     cursor: pointer;
     min-width: 45px;
@@ -203,11 +217,11 @@ ol {
     will-change: transform;
 	
 }
-/* .ThemeFlipIcon_icon__dAwiN:hover {
+.ThemeFlipIcon_icon__dAwiN:hover {
     box-shadow: var(--shadow-elevation-medium);
     transform: scale(1);
     transition:color var(--hover-up), box-shadow var(--hover-up), transform var(--hover-up)
-} */
+}
 
 .ThemeTags {
 	top: 35%;
