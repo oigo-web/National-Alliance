@@ -144,7 +144,7 @@ ol {
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: top center;
+	background-position: bottom center;
 }
 
 .spad {
@@ -210,12 +210,26 @@ ol {
 } */
 
 .ThemeTags {
-	top: 0;
+	top: 35%;
 	right: 0;
 	display: flex;
-	gap: 10px;
+	align-items: center;
+	gap: 3rem;
 	position: absolute;
 }
+
+.ThemeTags a{
+	color: #0cae03;
+}
+
+.youtube-play path{
+	color: #000;
+}
+
+.ThemeFlipIcon_icon__dAwiN a {
+	color: indigo;
+}
+
 
 .site-btn {
 	font-size: 16px;
@@ -339,15 +353,16 @@ ol {
 	display: inline-block;
 	list-style: none;
 	margin-right: 40px;
-	/* position: relative; */
+	position: relative;
 }
+
 
 .nav-menu .mainmenu ul li .dropdown {
 	position: absolute;
 	width: 180px;
 	background: #ffffff;
 	z-index: 99;
-	left: 50%;
+	left: 40%;
 	top: 130px;
 	opacity: 0;
 	visibility: hidden;
@@ -357,6 +372,8 @@ ol {
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
+
+
 
 .nav-menu .mainmenu ul li .dropdown li {
 	display: block;
@@ -434,16 +451,50 @@ ol {
 	padding-top: 55px;
 }
 
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4rem 0;
+}
+
 .hero-section .hero-text {
 	padding-top: 184px;
 }
 
-.hero-section .hero-text span {
+.col-lg-5 img {
+	flex: 0;
+	width: 100%;
+	max-width: 500px;
+
+}
+
+.hero-section .hero-text {
 	font-size: 23px;
 	color: #ffffff;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 5px;
+	padding: 0 0 0 80px;
+}
+
+.btn {
+	margin-top: 20px;
+	border: 1px solid #0cae03;
+	font-weight: 600;
+	transition: all 0.3s ease 0s;
+}
+
+.btn a {
+	color: #0cae03;
+	padding: 10px;
+
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #000;
+	border:#fff;
 }
 
 .hero-section .hero-text h2 {
@@ -451,8 +502,6 @@ ol {
 	color: #ffffff;
 	line-height: 40px;
 	font-weight: 400;
-	margin-top: 41px;
-	margin-bottom: 101px;
 	letter-spacing: 5px;
 }
 
