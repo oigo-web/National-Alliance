@@ -347,7 +347,7 @@ ol {
 }
 
 .logo {
-	float: left;
+	/* float: left; */
 	padding-top: 36px;
 	padding-bottom: 37px;
 }
@@ -357,7 +357,8 @@ ol {
 }
 
 .nav-menu {
-	float: right;
+	padding: auto;
+	/* float: right; */
 }
 
 .nav-menu .mainmenu {
