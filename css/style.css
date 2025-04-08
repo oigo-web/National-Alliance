@@ -210,9 +210,16 @@ ol {
 } */
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .ThemeTags {
 	top: 0;
 	right: 0;
+=======
+/* .youtube__icone,
+.ThemeFlipIcon_icon__dAwiN {
+	top: 30%;
+	right: 4%;
+>>>>>>> Stashed changes
 	display: flex;
 	gap: 10px;
 =======
@@ -223,6 +230,9 @@ ol {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	position: absolute;
 } */
@@ -232,7 +242,10 @@ ol {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 .ThemeFlipIcon_icon__dAwiN, a {
 	color: indigo;
@@ -374,6 +387,10 @@ ol {
 	margin: 0;
 }
 
+.nav-menu .mainmenu ul li:last-child {
+	margin: 0;
+}
+
 
 >>>>>>> Stashed changes
 .nav-menu .mainmenu ul li .dropdown {
@@ -382,8 +399,13 @@ ol {
 	background: #ffffff;
 	z-index: 99;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	left: 50%;
 	top: 130px;
+=======
+	left: 40%;
+	top: 50px;
+>>>>>>> Stashed changes
 =======
 	left: 40%;
 	top: 50px;
@@ -471,6 +493,7 @@ ol {
 
 .hero-section {
 	padding-top: 40px;
+<<<<<<< Updated upstream
 }
 
 <<<<<<< Updated upstream
@@ -495,11 +518,29 @@ ol {
 .hero__subtitle {
 	font-size: 30px;
 >>>>>>> Stashed changes
+=======
+}
+
+.hero__row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 4rem 0;
+}
+
+.hero-section {
+	padding-top: 100px;
+}
+
+.hero__subtitle {
+	font-size: 30px;
+>>>>>>> Stashed changes
 	color: #ffffff;
 	line-height: 1.5;
 	font-weight: 400;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 	letter-spacing: 5px;
 }
@@ -514,7 +555,41 @@ ol {
 	letter-spacing: 5px;
 =======
 	padding: 0 0 20px 0;
+=======
+	padding: 0 0 20px 0;
 }
+
+
+.button {
+	display: inline;
+	margin: 20px 0 ;
+	border: 1px solid #0cae03;
+	transition: all 0.3s ease 0s;
+	padding: 10px;
+}
+
+.btn, a {
+	font-weight: 600;
+	font-size: 20px;
+	color: #0cae03;
+}
+
+.button, a:hover {
+	color: #000;
+}
+
+.button:hover {
+	background-color: #fff;
+	border:#fff;
+}
+
+.main__img, img {
+	flex: 0 0 50%;
+	width: 100%;
+	max-width: 500px;
+>>>>>>> Stashed changes
+}
+ 
 
 
 .button {
