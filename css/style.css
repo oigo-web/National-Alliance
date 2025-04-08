@@ -209,14 +209,37 @@ ol {
     transition:color var(--hover-up), box-shadow var(--hover-up), transform var(--hover-up)
 } */
 
+<<<<<<< Updated upstream
 .ThemeTags {
 	top: 0;
 	right: 0;
 	display: flex;
 	gap: 10px;
+=======
+/* .youtube__icone,
+.ThemeFlipIcon_icon__dAwiN {
+	top: 30%;
+	right: 4%;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+>>>>>>> Stashed changes
 	position: absolute;
+} */
+
+.youtube__icone, a{
+	color: #F44949;
 }
 
+<<<<<<< Updated upstream
+=======
+
+.ThemeFlipIcon_icon__dAwiN, a {
+	color: indigo;
+}
+
+
+>>>>>>> Stashed changes
 .site-btn {
 	font-size: 16px;
 	color: #ffffff;
@@ -302,15 +325,16 @@ ol {
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	height: 80px;
 }
 
 .header-section {
 	/* position: static;
 	display: -webkit-box;
 	display: -ms-flexbox; */
-	display: flex;
+	/* display: flex;
 	align-items: center;
-
+	justify-content: space-between; */
 }
 
 .header-section.header-normal {
@@ -318,21 +342,23 @@ ol {
 }
 
 .logo {
-	float: left;
-	padding-top: 36px;
-	padding-bottom: 37px;
+	/* float: left; */
+	/* padding-top: 12px; */
+	/* padding-bottom: 37px; */
 }
 
-.logo a {
-	display: inline-block;
-}
+/* .logo a {
+	display: inline;
+} */
 
 .nav-menu {
-	float: right;
+	/* float: right; */
 }
 
 .nav-menu .mainmenu {
-	display: inline-block;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .nav-menu .mainmenu ul li {
@@ -342,13 +368,26 @@ ol {
 	/* position: relative; */
 }
 
+<<<<<<< Updated upstream
+=======
+.nav-menu .mainmenu ul li:last-child {
+	margin: 0;
+}
+
+
+>>>>>>> Stashed changes
 .nav-menu .mainmenu ul li .dropdown {
 	position: absolute;
 	width: 180px;
 	background: #ffffff;
 	z-index: 99;
+<<<<<<< Updated upstream
 	left: 50%;
 	top: 130px;
+=======
+	left: 40%;
+	top: 50px;
+>>>>>>> Stashed changes
 	opacity: 0;
 	visibility: hidden;
 	-webkit-box-shadow: 4px 13px 30px rgba(0, 0, 0, 0.15);
@@ -431,18 +470,37 @@ ol {
 -----------------------*/
 
 .hero-section {
-	padding-top: 55px;
+	padding-top: 40px;
 }
 
+<<<<<<< Updated upstream
 .hero-section .hero-text {
 	padding-top: 184px;
 }
 
 .hero-section .hero-text span {
 	font-size: 23px;
+=======
+.hero__row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 4rem 0;
+}
+
+.hero-section {
+	padding-top: 100px;
+}
+
+.hero__subtitle {
+	font-size: 30px;
+>>>>>>> Stashed changes
 	color: #ffffff;
-	font-weight: 900;
+	line-height: 1.5;
+	font-weight: 400;
+	letter-spacing: 2px;
 	text-transform: uppercase;
+<<<<<<< Updated upstream
 	letter-spacing: 5px;
 }
 
@@ -454,7 +512,41 @@ ol {
 	margin-top: 41px;
 	margin-bottom: 101px;
 	letter-spacing: 5px;
+=======
+	padding: 0 0 20px 0;
 }
+
+
+.button {
+	display: inline;
+	margin: 20px 0 ;
+	border: 1px solid #0cae03;
+	transition: all 0.3s ease 0s;
+	padding: 10px;
+}
+
+.btn, a {
+	font-weight: 600;
+	font-size: 20px;
+	color: #0cae03;
+}
+
+.button, a:hover {
+	color: #000;
+}
+
+.button:hover {
+	background-color: #fff;
+	border:#fff;
+}
+
+.main__img, img {
+	flex: 0 0 50%;
+	width: 100%;
+	max-width: 500px;
+>>>>>>> Stashed changes
+}
+ 
 
 /* let's give it chanse and create Terminal */
 .TerminalCursor_cursor__UisQi {
