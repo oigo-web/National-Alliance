@@ -150,7 +150,7 @@ ol {
 }
 
 .spad {
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 100px;
 }
 
@@ -471,7 +471,7 @@ ol {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 4rem 0;
+	padding: 1rem 0;
 }
 
 .hero-section .hero-text {
@@ -2347,7 +2347,7 @@ ol {
 
 @media only screen and (min-width: 1200px) {
 	.container {
-		max-width: 2222px;
+		max-width: 1400px;
 	}
 }
 
