@@ -120,3 +120,6 @@
     });
 
 })(jQuery);
+
+// Use this for experimental purposes only
+// $(document).ready(function() {
