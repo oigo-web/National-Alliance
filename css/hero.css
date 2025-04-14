@@ -1,0 +1,81 @@
+/*---------------------
+  Hero
+-----------------------*/
+.hero {
+	padding-top: 55px;
+}
+
+.hero__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+/* .hero .hero__text {
+	padding-top: 184px;
+} */
+
+.hero__logo img {
+	flex: 1 1 auto;
+	width: 100%;
+	max-width: 500px;
+}
+
+
+.hero .hero-text,
+h2 {
+	font-size: 30px;
+	color: #ffffff;
+	line-height: 40px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	/* padding: 0 0 0 80px; */
+}
+
+.button {
+	width: 120px;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	border: 1px solid #0cae03;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	color: #0cae03;
+	padding: 10px;
+	font-weight: 600;
+}
+
+
+.button:hover {
+	color: #000;
+	background-color: #fff;
+	border: #fff;
+}
+
+
+/* let's give it chanse and create Terminal */
+.TerminalCursor_cursor__UisQi {
+	display: inline-block;
+	width: 10px;
+	height: 1em;
+	background-color: #53c90f;
+	margin-left: 1px;
+	position: relative;
+	vertical-align: middle;
+	bottom: 0.2em;
+	animation: TerminalCursor_blink__ei3sl 1s infinite;
+}
+
+@keyframes TerminalCursor_blink__ei3sl {
+
+	0%,
+	to {
+		background-color: #53c90f;
+	}
+
+	50% {
+		background-color: transparent
+	}
+}
