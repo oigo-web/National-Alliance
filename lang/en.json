@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "leadership": "Leadership",
+    "schedule": "Schedule",
+    "news": "News",
+    "contact": "Contact"
+},
+"dropdown": {
+    "kabiri": "Muhiddin Kabiri",
+    "sherzamonov": "Alim Sherzamonov",
+    "council": "PMT Council",
+    "executive": "Executive Office",
+    "deportaments": "Deportaments",
+    "representations": "Representations"
+  }
+}  
