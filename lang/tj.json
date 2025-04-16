@@ -1,17 +1,19 @@
 {
+  "nav": {
     "home": "Асосӣ",
-    "about": "Дар бораи мо",
+    "about": "ПМТ",
     "leadership": "Роҳбарият",
-    "schedule": "Ҷадвал",
+    "schedule": "Ҷадвали ПМТ",
     "news": "Ахбор",
     "contact": "Тамос бо мо",
-    "language": "Забон",
+    "language": "Забон"
+  },
+  "dropdown": {
     "kabiri": "Муҳиддин Кабирӣ",
     "sherzamonov": "Алим Шерзамонов",
-    "shuro": "Шӯрои ПМТ",
+    "shura": "Шурои ПМТ",
     "executive": "Дастгоҳи иҷроия",
     "departments": "Департаментҳо",
-    "representations": "Намояндагиҳо",
-    "currencyRates": "Курсҳои асъор"
+    "representatives": "Намояндагиҳо"
   }
-  
+}
