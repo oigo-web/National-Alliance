@@ -13,14 +13,19 @@
 }
 
 .logo {}
+.logo {}
 
 .logo a {
 	display: inline-block;
 }
 
 .nav-menu {}
+.nav-menu {}
 
 .nav-menu .mainmenu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -165,9 +170,20 @@ fill {
 
 
 	.theme-tags {
-		display: inline-block;
+		display: none;
 		justify-content: center;
 	}
+
+	.icone__youtube,
+	fill {
+		display: flex;
+
+	}
+
+	.switcher__theme {
+		display: flex;
+	}
+
 
 	.slicknav_menu {
 		display: block;
