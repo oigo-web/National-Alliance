@@ -170,20 +170,9 @@ fill {
 
 
 	.theme-tags {
-		display: none;
+		display: inline-block;
 		justify-content: center;
 	}
-
-	.icone__youtube,
-	fill {
-		display: flex;
-
-	}
-
-	.switcher__theme {
-		display: flex;
-	}
-
 
 	.slicknav_menu {
 		display: block;
