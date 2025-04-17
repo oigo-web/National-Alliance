@@ -1,0 +1,8 @@
+{
+    "rate_values": [
+      { "currency": "usd", "buy_rate": "10.96" },
+      { "currency": "eur", "buy_rate": "11.77" },
+      { "currency": "rub", "buy_rate": "0.12" }
+    ]
+  }
+  

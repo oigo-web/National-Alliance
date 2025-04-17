@@ -1,17 +1,19 @@
 {
+  "nav": {
     "home": "خانه",
-    "about": "درباره ما",
+    "about": "جبهه",
     "leadership": "رهبری",
-    "schedule": "برنامه",
+    "schedule": "برنامه جبهه",
     "news": "اخبار",
     "contact": "تماس با ما",
-    "language": "زبان",
+    "language": "زبان"
+  },
+  "dropdown": {
     "kabiri": "محی‌الدین کبیری",
-    "sherzamonov": "علیم شرزامانف",
-    "shuro": "شورای حزب",
+    "sherzamonov": "علیم شرزامانوف",
+    "shura": "شورای جبهه",
     "executive": "دفتر اجرایی",
     "departments": "دپارتمان‌ها",
-    "representations": "نمایندگی‌ها",
-    "currencyRates": "نرخ ارز"
+    "representatives": "نمایندگی‌ها"
   }
-  
+}
