@@ -61,7 +61,7 @@
 .schedule-tab .nav-tabs .nav-item .nav-link.active,
 .site-btn {
 	background-image: -o-linear-gradient(330deg, #ee8425 0%, #f9488b 100%), -o-linear-gradient(330deg, #ee8425 0%, #f9488b 100%);
-	background-image: repeating-conic-gradient(from 896deg, rgb(251, 161, 1), rgb(251, 251, 249) 0%, #ffffff 7.56%, #0cae03 8.4%, rgb(11, 203, 0) 14.71%, rgb(75, 50, 220) 20.17%, rgb(29, 0, 161) 31.51%, rgb(255, 187, 0) 50.84%, rgb(4, 22, 140) 70.17%, rgb(7, 49, 166) 82.77%, rgb(234, 7, 5) 87.39%, rgb(234, 19, 19) 95.38%), linear-gradient(120deg, #ee8425, rgb(195, 12, 12) 65.13%, #f9488b);
+	background-image: repeating-conic-gradient(from 896deg, rgb(241, 234, 221), rgb(251, 251, 249) 0%, #ffffff 7.56%, #0cae03 8.4%, rgb(11, 203, 0) 14.71%, rgb(240, 239, 246) 20.17%, rgb(234, 233, 242) 31.51%, rgb(247, 246, 243) 50.84%, rgb(238, 238, 241) 70.17%, rgb(241, 243, 247) 82.77%, rgb(246, 243, 243) 87.39%, rgb(243, 236, 236) 95.38%), linear-gradient(120deg, #212120, rgb(54, 51, 51) 65.13%, #f9488b);
 }
 
 /* buttons */
