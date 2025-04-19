@@ -11,8 +11,12 @@
 	height: 80px;
 	background-color: #fff;
 	width: 100%;
+
 	position: fixed;
 	z-index: 50;
+=======
+	position: static;
+
 }
 
 .header-section.header-normal {
