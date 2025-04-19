@@ -1,7 +1,7 @@
 /******************************************************************
   Template Name: National Alliance
   Description: NAT Event HTML Template
-  Author:Asliddin
+  Author:Asliddin & Saidbek
   Author URI: http://oigooi.org
   Version: 1.0
   Created: Asliddin
@@ -48,127 +48,7 @@
 -----------------------*/
 @import "hero.css";
 
-/*---------------------
-  Latest Blog
------------------------*/
 
-/* --------------------
-Lang and currency
---------------------- */
-/* >>> Add >>> Языковой селектор */
-.language-selector ul {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 9999;
-}
-.language-selector li:hover {
-    background-color: #f0f0f0;
-}
-/* <<< End >>> */
-
-/* >>> Add >>> Бегущая строка */
-.currency-ticker {
-    background-color: #25c222;
-    color: white;
-    padding: 8px;
-    font-weight: 600;
-    font-size: 14px;
-}
-/* <<< End >>> */
-
-
-.latest-blog {
-	background: #f4f6f8;
-	padding-bottom: 160px;
-}
-
-.latest-item {
-	height: 255px;
-	position: relative;
-	margin-bottom: 40px;
-	margin-left: 15px;
-	border-radius: 2px;
-	-webkit-box-shadow: 0px 0px 30px rgba(79, 84, 139, 0.15);
-	box-shadow: 0px 0px 30px rgba(79, 84, 139, 0.15);
-}
-
-.latest-item.large-item {
-	height: 550px;
-	margin-right: 15px;
-	margin-left: 0;
-}
-
-.latest-item.large-item .li-tag {
-	left: 40px;
-	top: 40px;
-}
-
-.latest-item.large-item .li-text {
-	padding: 0 40px;
-	bottom: 35px;
-}
-
-.latest-item.large-item .li-text h4 {
-	margin-bottom: 17px;
-}
-
-.latest-item.large-item .li-text h4 a {
-	color: #ffffff;
-	font-weight: 600;
-	line-height: 36px;
-}
-
-.latest-item.large-item .li-text span {
-	font-size: 16px;
-	color: #ffffff;
-}
-
-.latest-item.large-item .li-text span i {
-	color: #f44949;
-}
-
-.latest-item .li-tag {
-	font-size: 14px;
-	color: #ffffff;
-	display: inline-block;
-	padding: 5px 18px;
-	border-radius: 2px;
-	position: absolute;
-	left: 30px;
-	top: 30px;
-}
-
-.latest-item .li-text {
-	position: absolute;
-	left: 0;
-	bottom: 26px;
-	width: 100%;
-	padding: 0 30px;
-}
-
-.latest-item .li-text h5 {
-	margin-bottom: 5px;
-}
-
-.latest-item .li-text h5 a {
-	display: block;
-	color: #ffffff;
-	font-weight: 600;
-	line-height: 30px;
-}
-
-.latest-item .li-text span {
-	font-size: 14px;
-	color: #ffffff;
-}
-
-.latest-item .li-text span i {
-	color: #f44949;
-}
 
 /*---------------------
   Conter
@@ -303,6 +183,8 @@ Lang and currency
 /*---------------------
   Member Item
 -----------------------*/
+/* @import "member-item.css"; */
+
 
 .team-member-section {
 	overflow: hidden;
@@ -378,6 +260,8 @@ Lang and currency
 /*---------------------
   Schedule Section
 -----------------------*/
+
+/* @import "schedule.css"; */
 
 .schedule-section {
 	padding-bottom: 60px;
@@ -515,126 +399,138 @@ Lang and currency
   Pricing Section
 -----------------------*/
 
-.pricing-section {
-	padding-top: 90px;
-	padding-bottom: 80px;
+@import "pricing.css";
+
+/*---------------------
+  Latest Blog
+-----------------------*/
+
+/* --------------------
+Lang and currency
+--------------------- */
+/* >>> Add >>> Языковой селектор */
+.language-selector ul {
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 9999;
 }
 
-.pricing-section .section-title {
-	margin-bottom: 88px;
+.language-selector li:hover {
+	background-color: #f0f0f0;
 }
 
-.pricing-section .section-title h2 {
-	color: #ffffff;
+/* <<< End >>> */
+
+/* >>> Add >>> Бегущая строка */
+.currency-ticker {
+	background-color: #25c222;
+	color: white;
+	padding: 8px;
+	font-weight: 600;
+	font-size: 14px;
 }
 
-.pricing-section .section-title p {
-	color: #a0a1b5;
+/* <<< End >>> */
+
+
+.latest-blog {
+	background: #f4f6f8;
+	padding-bottom: 160px;
 }
 
-.price-item {
-	background: #ffffff;
-	text-align: center;
-	padding-top: 34px;
-	padding-bottom: 18px;
+.latest-item {
+	height: 255px;
 	position: relative;
-	border-radius: 2px;
 	margin-bottom: 40px;
+	margin-left: 15px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 30px rgba(79, 84, 139, 0.15);
+	box-shadow: 0px 0px 30px rgba(79, 84, 139, 0.15);
 }
 
-.price-item.top-rated {
-	margin-top: -36px;
+.latest-item.large-item {
+	height: 550px;
+	margin-right: 15px;
+	margin-left: 0;
 }
 
-.price-item .tr-tag {
-	width: 28px;
-	height: 50px;
-	line-height: 38px;
-	-webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 65%, 0% 100%, 0% 0%);
-	clip-path: polygon(100% 0%, 100% 100%, 50% 65%, 0% 100%, 0% 0%);
-	position: absolute;
-	right: 26px;
-	top: 0;
+.latest-item.large-item .li-tag {
+	left: 40px;
+	top: 40px;
 }
 
-.price-item .tr-tag i {
+.latest-item.large-item .li-text {
+	padding: 0 40px;
+	bottom: 35px;
+}
+
+.latest-item.large-item .li-text h4 {
+	margin-bottom: 17px;
+}
+
+.latest-item.large-item .li-text h4 a {
 	color: #ffffff;
-}
-
-.price-item h4 {
-	color: #171822;
-	font-weight: 700;
-	text-transform: uppercase;
-	margin-bottom: 26px;
-}
-
-.price-item .pi-price {
-	padding-top: 16px;
-	padding-bottom: 14px;
-	margin-bottom: 38px;
-}
-
-.price-item .pi-price h2 {
-	font-size: 60px;
-	color: #ffffff;
-	font-family: "Poppins", sans-serif;
 	font-weight: 600;
-	display: inline-block;
-	position: relative;
-	padding-left: 20px;
+	line-height: 36px;
 }
 
-.price-item .pi-price h2 span {
-	font-size: 30px;
-	position: absolute;
-	left: 0px;
-	top: 9px;
-}
-
-.price-item ul li {
-	list-style: none;
+.latest-item.large-item .li-text span {
 	font-size: 16px;
-	color: #6a6b7c;
-	line-height: 38px;
-}
-
-.price-item .price-btn {
-	font-size: 16px;
-	color: #171822;
-	font-weight: 600;
-	display: inline-block;
-	background: #ffffff;
-	padding: 10px 85px;
-	border-radius: 50px;
-	-webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
-	box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
-	position: relative;
-	bottom: -39px;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.price-item .price-btn:hover {
 	color: #ffffff;
 }
 
-.price-item .price-btn:hover span {
-	color: #ffffff;
-}
-
-.price-item .price-btn span {
+.latest-item.large-item .li-text span i {
 	color: #f44949;
-	position: relative;
-	top: 3px;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+}
+
+.latest-item .li-tag {
+	font-size: 14px;
+	color: #ffffff;
+	display: inline-block;
+	padding: 5px 18px;
+	border-radius: 2px;
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+
+.latest-item .li-text {
+	position: absolute;
+	left: 0;
+	bottom: 26px;
+	width: 100%;
+	padding: 0 30px;
+}
+
+.latest-item .li-text h5 {
+	margin-bottom: 5px;
+}
+
+.latest-item .li-text h5 a {
+	display: block;
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.latest-item .li-text span {
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.latest-item .li-text span i {
+	color: #f44949;
 }
 
 /*---------------------
   Newslatter Section
 -----------------------*/
+
+/* @import "newslatter.css"; */
 
 .newslatter-section.about-newslatter .newslatter-inner {
 	margin-top: 0;
@@ -784,6 +680,9 @@ Lang and currency
 /*---------------------
   Footer
 -----------------------*/
+
+/* @import "footer.css"; */
+
 
 .footer-section {
 	background: #171822;
@@ -1151,71 +1050,9 @@ Lang and currency
 -----------------------*/
 @import "speaker.css";
 
-.speaker-section {
-	padding-top: 0;
-}
-
-.speaker-item {
-	margin-bottom: 50px;
-}
-
-.speaker-item .si-pic img {
-	min-width: 100%;
-	border-radius: 2px;
-}
-
-.speaker-item .si-text .si-title {
-	margin-bottom: 28px;
-}
-
-.speaker-item .si-text .si-title h4 {
-	color: #171822;
-	font-weight: 600;
-	margin-bottom: 13px;
-}
-
-.speaker-item .si-text .si-title span {
-	color: #f44949;
-	font-size: 16px;
-	display: block;
-}
-
-.speaker-item .si-text .si-social {
-	margin-bottom: 24px;
-}
-
-.speaker-item .si-text .si-social a {
-	display: inline-block;
-	font-size: 16px;
-	color: #171822;
-	height: 40px;
-	width: 40px;
-	text-align: center;
-	line-height: 40px;
-	background: #ebebeb;
-	border-radius: 50%;
-	margin-right: 5px;
-}
-
-.speaker-item .si-text .si-social a:hover {
-	background: -o-linear-gradient(330deg, #ee8425, #f9488b);
-	background: linear-gradient(120deg, #ee8425, #f9488b);
-	color: #ffffff;
-}
-
-.speaker-item .si-text p {
-	color: #707070;
-	line-height: 26px;
-}
-
-.load-more {
-	text-align: center;
-	padding-top: 10px;
-}
-
-.load-more .primary-btn {
-	padding: 12px 45px;
-}
+/* --------------------- 
+  Schedule Section
+----------------------- */
 
 /*------------------------
   Schedule Table Section
@@ -1346,6 +1183,8 @@ Lang and currency
   Blog
 -----------------------*/
 
+/* @import "blog.css"; */
+
 .blog-section {
 	padding-top: 0;
 }
@@ -1398,7 +1237,7 @@ Lang and currency
 }
 
 .blog-item .bi-text h5 a {
-	color: #ffffff;
+	color: #151414;
 	line-height: 24px;
 	font-weight: 600;
 	display: block;
@@ -1410,7 +1249,7 @@ Lang and currency
 
 .blog-item .bi-text h3 a {
 	font-size: 28px;
-	color: #ffffff;
+	color: #f3f0f0;
 	font-weight: 600;
 	line-height: 36px;
 	display: block;
@@ -1723,6 +1562,7 @@ Lang and currency
 	border: 1px solid #f44949;
 	color: #171822;
 }
+
 
 /*---------------------
   Related Post Section
@@ -2114,6 +1954,7 @@ Lang and currency
 
 	.slicknav_nav {
 		background: #222;
+		margin: 20px 0 0 0;
 	}
 
 	.slicknav_nav .slicknav_row,
