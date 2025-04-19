@@ -186,7 +186,7 @@ fill {
 
 	.theme-tags {
 		top: 8px;
-		right: 15px;
+		right: 30px;
 	}
 
 	.slicknav_menu {
@@ -249,5 +249,3 @@ fill {
 	}
 
 }
-
-@media (max-width: 996px) {}
