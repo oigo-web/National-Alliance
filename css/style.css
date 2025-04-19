@@ -422,7 +422,7 @@ Lang and currency
 
 .language-selector li:hover {
 	background-color: #f0f0f0;
-=======
+}
 
 /* --------------------
 Lang and currency
@@ -446,14 +446,15 @@ Lang and currency
 
 /* <<< End >>> */
 
-/* >>> Add >>> Бегущая строка */
 .currency-ticker {
 	background-color: #25c222;
 	color: white;
 	padding: 8px;
 	font-weight: 600;
 	font-size: 14px;
-=======
+}
+	/* font-size: 14px; */
+
 /* >>> Add >>> Бегущая строка */
 .currency-ticker {
     background-color: #25c222;
