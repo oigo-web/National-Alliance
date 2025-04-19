@@ -8,31 +8,29 @@
 }
 
 .header-section {
-	/* display: -webkit-box;
-	display: -ms-flexbox; */
-	/* display: flex; */
 	height: 80px;
 	background-color: #fff;
 	width: 100%;
+
+	position: fixed;
+	z-index: 50;
+=======
 	position: static;
+
 }
 
 .header-section.header-normal {
 	border-bottom: 1px solid #e5e5e5;
 }
 
-
 .logo {
 	font-size: 24px;
 	display: inline;
 }
 
-
-
 .nav-menu {
-
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	padding-top: 20px;
 }
@@ -42,6 +40,10 @@
 	list-style: none;
 	margin-right: 40px;
 	position: relative;
+}
+
+.mainmenu ul li:last-child {
+	margin-right: 0;
 }
 
 .dropdown {
@@ -74,6 +76,12 @@
 	text-transform: capitalize;
 }
 
+ul,
+ol {
+	padding: 0 160px 0 0;
+	margin: 0;
+}
+
 ul li .dropdown li a:hover {
 	color: #f44949;
 }
@@ -93,7 +101,7 @@ ul li:hover>a:after {
 .mainmenu ul li:hover .dropdown {
 	opacity: 1;
 	visibility: visible;
-	top: 100px;
+	top: 50px;
 }
 
 .mainmenu ul li a {
@@ -120,10 +128,6 @@ ul li a:after {
 	transition: all 0.3s;
 }
 
-/* .nav-menu .primary-btn.top-btn {
-	margin: 27px 0;
-} */
-
 .slicknav_menu {
 	display: none;
 }
@@ -135,11 +139,10 @@ ul li a:after {
 	text-decoration: none;
 }
 
-
 .theme-tags {
 	position: fixed;
 	top: 20px;
-	right: 16px;
+	right: 60px;
 	display: flex;
 	gap: 18px;
 }
@@ -167,7 +170,6 @@ fill {
 /* Tablet */
 @media (max-width: 996px) {
 
-
 	.logo {
 		display: none;
 	}
@@ -187,8 +189,8 @@ fill {
 
 
 	.theme-tags {
-		display: inline-block;
-		justify-content: center;
+		top: 8px;
+		right: 30px;
 	}
 
 	.slicknav_menu {
@@ -211,6 +213,7 @@ fill {
 	}
 
 	.slicknav_nav {
+		text-align: left;
 		background: #222;
 	}
 
@@ -223,8 +226,16 @@ fill {
 		transition: all 0.3s;
 	}
 
-	.slicknav_nav ul {
-		margin: 0;
+	ul,
+	li,
+	a {
+		padding: 10px 0;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	.slicknav_nav {
+		margin: 20px 0 0 0;
 	}
 
 	.slicknav_nav a:hover {
@@ -233,10 +244,12 @@ fill {
 		color: #ffffff;
 	}
 
-	.slicknav_nav .slicknav_row:hover {
-		border-radius: 0;
-		background: #f44949;
-		color: #ffffff;
+	ul li a:after {
+		background: none;
+	}
+
+	.slicknav_arrow {
+		display: inline;
 	}
 
 }

@@ -405,6 +405,25 @@
   Latest Blog
 -----------------------*/
 
+
+/* --------------------
+Lang and currency
+--------------------- */
+/* >>> Add >>> Языковой селектор */
+.language-selector ul {
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 9999;
+}
+
+.language-selector li:hover {
+	background-color: #f0f0f0;
+=======
+
 /* --------------------
 Lang and currency
 --------------------- */
@@ -420,9 +439,21 @@ Lang and currency
 }
 .language-selector li:hover {
     background-color: #f0f0f0;
+
 }
 /* <<< End >>> */
 
+
+/* <<< End >>> */
+
+/* >>> Add >>> Бегущая строка */
+.currency-ticker {
+	background-color: #25c222;
+	color: white;
+	padding: 8px;
+	font-weight: 600;
+	font-size: 14px;
+=======
 /* >>> Add >>> Бегущая строка */
 .currency-ticker {
     background-color: #25c222;
@@ -430,6 +461,7 @@ Lang and currency
     padding: 8px;
     font-weight: 600;
     font-size: 14px;
+
 }
 /* <<< End >>> */
 
@@ -1951,6 +1983,7 @@ Lang and currency
 
 	.slicknav_nav {
 		background: #222;
+		margin: 20px 0 0 0;
 	}
 
 	.slicknav_nav .slicknav_row,
