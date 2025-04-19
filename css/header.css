@@ -14,9 +14,6 @@
 
 	position: fixed;
 	z-index: 50;
-=======
-	position: static;
-
 }
 
 .header-section.header-normal {
