@@ -1,7 +1,7 @@
 /******************************************************************
   Template Name: National Alliance
   Description: NAT Event HTML Template
-  Author:Asliddin
+  Author:Asliddin & Saidbek
   Author URI: http://oigooi.org
   Version: 1.0
   Created: Asliddin
@@ -48,133 +48,71 @@
 -----------------------*/
 @import "hero.css";
 
-/*---------------------
-  Latest Blog
------------------------*/
 
-/* --------------------
-Lang and currency
---------------------- */
-/* >>> Add >>> Языковой селектор */
-.language-selector ul {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 9999;
-}
-.language-selector li:hover {
-    background-color: #f0f0f0;
-}
-/* <<< End >>> */
-
-/* >>> Add >>> Бегущая строка */
-.currency-ticker {
-    background-color: #25c222;
-    color: white;
-    padding: 8px;
-    font-weight: 600;
-    font-size: 14px;
-}
-/* <<< End >>> */
-
-
-.latest-blog {
-	background: #f4f6f8;
-	padding-bottom: 160px;
-}
-
-.latest-item {
-	height: 255px;
-	position: relative;
-	margin-bottom: 40px;
-	margin-left: 15px;
-	border-radius: 2px;
-	-webkit-box-shadow: 0px 0px 30px rgba(79, 84, 139, 0.15);
-	box-shadow: 0px 0px 30px rgba(79, 84, 139, 0.15);
-}
-
-.latest-item.large-item {
-	height: 550px;
-	margin-right: 15px;
-	margin-left: 0;
-}
-
-.latest-item.large-item .li-tag {
-	left: 40px;
-	top: 40px;
-}
-
-.latest-item.large-item .li-text {
-	padding: 0 40px;
-	bottom: 35px;
-}
-
-.latest-item.large-item .li-text h4 {
-	margin-bottom: 17px;
-}
-
-.latest-item.large-item .li-text h4 a {
-	color: #ffffff;
-	font-weight: 600;
-	line-height: 36px;
-}
-
-.latest-item.large-item .li-text span {
-	font-size: 16px;
-	color: #ffffff;
-}
-
-.latest-item.large-item .li-text span i {
-	color: #f44949;
-}
-
-.latest-item .li-tag {
-	font-size: 14px;
-	color: #ffffff;
-	display: inline-block;
-	padding: 5px 18px;
-	border-radius: 2px;
-	position: absolute;
-	left: 30px;
-	top: 30px;
-}
-
-.latest-item .li-text {
-	position: absolute;
-	left: 0;
-	bottom: 26px;
-	width: 100%;
-	padding: 0 30px;
-}
-
-.latest-item .li-text h5 {
-	margin-bottom: 5px;
-}
-
-.latest-item .li-text h5 a {
-	display: block;
-	color: #ffffff;
-	font-weight: 600;
-	line-height: 30px;
-}
-
-.latest-item .li-text span {
-	font-size: 14px;
-	color: #ffffff;
-}
-
-.latest-item .li-text span i {
-	color: #f44949;
-}
 
 /*---------------------
   Conter
 -----------------------*/
 
-@import "conter.css";
+.counter-section {
+	padding: 13px 0;
+}
+
+.counter-section .counter-text span {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.counter-section .counter-text h3 {
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 38px;
+	margin-top: 10px;
+}
+
+.counter-section .cd-timer {
+	text-align: right;
+}
+
+.counter-section .cd-timer .cd-item {
+	display: inline-block;
+	text-align: center;
+	margin-left: 35px;
+	height: 120px;
+	width: 120px;
+	padding-top: 32px;
+	position: relative;
+}
+
+.counter-section .cd-timer .cd-item:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #ffffff;
+	content: "";
+	opacity: 0.1;
+	border-radius: 4px;
+}
+
+.counter-section .cd-timer .cd-item:first-child {
+	margin-left: 0;
+}
+
+.counter-section .cd-timer .cd-item span {
+	font-size: 60px;
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.counter-section .cd-timer .cd-item p {
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 0;
+	line-height: 30px;
+}
 
 /*---------------------
   Home About Section
@@ -323,7 +261,139 @@ Lang and currency
   Schedule Section
 -----------------------*/
 
-@import "schedule.css";
+/* @import "schedule.css"; */
+
+.schedule-section {
+	padding-bottom: 60px;
+}
+
+.schedule-tab .nav-tabs {
+	border: none;
+	border-radius: 2px;
+	margin-bottom: 60px;
+	-webkit-box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
+	box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
+}
+
+.schedule-tab .nav-tabs .nav-item {
+	border-right: 1px solid #e7e7e8;
+	width: 20%;
+	text-align: center;
+}
+
+.schedule-tab .nav-tabs .nav-item:last-child {
+	border-right: none;
+}
+
+.schedule-tab .nav-tabs .nav-item .nav-link {
+	padding: 14px 0 13px 0;
+	border: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.schedule-tab .nav-tabs .nav-item .nav-link.active {
+	border-radius: 2px;
+	border-color: #e7e7e8;
+}
+
+.schedule-tab .nav-tabs .nav-item .nav-link.active h5 {
+	color: #ffffff;
+}
+
+.schedule-tab .nav-tabs .nav-item .nav-link.active p {
+	color: #ffffff;
+}
+
+.schedule-tab .nav-tabs .nav-item .nav-link h5 {
+	color: #171822;
+	font-weight: 600;
+}
+
+.schedule-tab .nav-tabs .nav-item .nav-link p {
+	margin-bottom: 0;
+}
+
+.schedule-tab .st-content {
+	border: 1px solid #ebebeb;
+	border-radius: 2px;
+	margin-bottom: 40px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.schedule-tab .st-content:hover {
+	-webkit-box-shadow: 3px 12px 30px rgba(23, 24, 34, 0.05);
+	box-shadow: 3px 12px 30px rgba(23, 24, 34, 0.05);
+	border: 1px solid transparent;
+}
+
+.schedule-tab .st-content .sc-pic {
+	text-align: center;
+	padding: 30px 0;
+}
+
+.schedule-tab .st-content .sc-pic img {
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+}
+
+.schedule-tab .st-content .sc-text {
+	padding: 58px 0;
+}
+
+.schedule-tab .st-content .sc-text h4 {
+	color: #171822;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.schedule-tab .st-content .sc-text ul li {
+	list-style: none;
+	display: inline-block;
+	font-size: 16px;
+	color: #6a6b7c;
+	margin-right: 25px;
+	position: relative;
+}
+
+.schedule-tab .st-content .sc-text ul li:last-child:after {
+	display: none;
+}
+
+.schedule-tab .st-content .sc-text ul li:after {
+	position: absolute;
+	right: -18px;
+	top: 0;
+	content: "/";
+}
+
+.schedule-tab .st-content .sc-text ul li i {
+	color: #f44949;
+	font-size: 14px;
+}
+
+.schedule-tab .st-content .sc-widget {
+	padding: 58px 0;
+}
+
+.schedule-tab .st-content .sc-widget li {
+	list-style: none;
+	font-size: 16px;
+	color: #6a6b7c;
+	line-height: 32px;
+	position: relative;
+	padding-left: 22px;
+}
+
+.schedule-tab .st-content .sc-widget li i {
+	color: #f44949;
+	position: absolute;
+	left: 0;
+	top: 7px;
+}
 
 /*---------------------
   Pricing Section
@@ -332,10 +402,211 @@ Lang and currency
 @import "pricing.css";
 
 /*---------------------
+  Latest Blog
+-----------------------*/
+
+/* --------------------
+Lang and currency
+--------------------- */
+/* >>> Add >>> Языковой селектор */
+.language-selector ul {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9999;
+}
+.language-selector li:hover {
+    background-color: #f0f0f0;
+}
+/* <<< End >>> */
+
+/* >>> Add >>> Бегущая строка */
+.currency-ticker {
+    background-color: #25c222;
+    color: white;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+/* <<< End >>> */
+
+
+.latest-blog {
+	background: #f4f6f8;
+	padding-bottom: 160px;
+}
+
+.latest-item {
+	height: 255px;
+	position: relative;
+	margin-bottom: 40px;
+	margin-left: 15px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 30px rgba(79, 84, 139, 0.15);
+	box-shadow: 0px 0px 30px rgba(79, 84, 139, 0.15);
+}
+
+.latest-item.large-item {
+	height: 550px;
+	margin-right: 15px;
+	margin-left: 0;
+}
+
+.latest-item.large-item .li-tag {
+	left: 40px;
+	top: 40px;
+}
+
+.latest-item.large-item .li-text {
+	padding: 0 40px;
+	bottom: 35px;
+}
+
+.latest-item.large-item .li-text h4 {
+	margin-bottom: 17px;
+}
+
+.latest-item.large-item .li-text h4 a {
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 36px;
+}
+
+.latest-item.large-item .li-text span {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.latest-item.large-item .li-text span i {
+	color: #f44949;
+}
+
+.latest-item .li-tag {
+	font-size: 14px;
+	color: #ffffff;
+	display: inline-block;
+	padding: 5px 18px;
+	border-radius: 2px;
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+
+.latest-item .li-text {
+	position: absolute;
+	left: 0;
+	bottom: 26px;
+	width: 100%;
+	padding: 0 30px;
+}
+
+.latest-item .li-text h5 {
+	margin-bottom: 5px;
+}
+
+.latest-item .li-text h5 a {
+	display: block;
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.latest-item .li-text span {
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.latest-item .li-text span i {
+	color: #f44949;
+}
+
+/*---------------------
   Newslatter Section
 -----------------------*/
 
-@import "newslatter.css";
+/* @import "newslatter.css"; */
+
+.newslatter-section.about-newslatter .newslatter-inner {
+	margin-top: 0;
+}
+
+.newslatter-inner {
+	padding: 60px 70px 48px;
+	overflow: hidden;
+	border-radius: 2px;
+	margin-top: -100px;
+}
+
+.newslatter-inner .ni-text {
+	float: left;
+}
+
+.newslatter-inner .ni-text h3 {
+	color: #ffffff;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.newslatter-inner .ni-text p {
+	color: #ffffff;
+	margin-bottom: 0;
+}
+
+.newslatter-inner .ni-form {
+	width: 400px;
+	position: relative;
+	float: right;
+	margin-top: 12px;
+}
+
+.newslatter-inner .ni-form input {
+	width: 100%;
+	height: 50px;
+	font-size: 16px;
+	color: #a0a1b5;
+	padding-left: 20px;
+	background: #ffffff;
+	border-radius: 50px;
+	border: none;
+	padding-right: 140px;
+}
+
+.newslatter-inner .ni-form input::-webkit-input-placeholder {
+	color: #a0a1b5;
+}
+
+.newslatter-inner .ni-form input::-moz-placeholder {
+	color: #a0a1b5;
+}
+
+.newslatter-inner .ni-form input:-ms-input-placeholder {
+	color: #a0a1b5;
+}
+
+.newslatter-inner .ni-form input::-ms-input-placeholder {
+	color: #a0a1b5;
+}
+
+.newslatter-inner .ni-form input::placeholder {
+	color: #a0a1b5;
+}
+
+.newslatter-inner .ni-form button {
+	width: 128px;
+	height: 40px;
+	text-align: center;
+	border: none;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 50px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
 
 /*---------------------
   Home Contact 
@@ -783,7 +1054,127 @@ Lang and currency
 /*------------------------
   Schedule Table Section
 -------------------------*/
-/* inside the schedule */
+
+.schedule-table-section {
+	padding-top: 0;
+}
+
+.schedule-table-tab .nav-tabs {
+	border: none;
+	border-radius: 4px;
+	margin-bottom: 50px;
+	-webkit-box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
+	box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
+}
+
+.schedule-table-tab .nav-tabs .nav-item {
+	border-right: 1px solid #e7e7e8;
+	width: 20%;
+	text-align: center;
+}
+
+.schedule-table-tab .nav-tabs .nav-item:last-child {
+	border-right: none;
+}
+
+.schedule-table-tab .nav-tabs .nav-item .nav-link {
+	padding: 22px 0;
+	border: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	color: #171822;
+}
+
+.schedule-table-tab .nav-tabs .nav-item .nav-link.active {
+	border-color: #e7e7e8;
+	color: #ffffff;
+}
+
+.schedule-table-tab .schedule-table-content table {
+	width: 100%;
+	text-align: center;
+	border: 1px solid #e1e1e1;
+}
+
+.schedule-table-tab .schedule-table-content table thead {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.schedule-table-tab .schedule-table-content table thead tr th {
+	border-right: 1px solid #e5e5e5;
+	padding: 24px 0 26px;
+}
+
+.schedule-table-tab .schedule-table-content table thead tr th strong {
+	font-size: 24px;
+	color: #171822;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.schedule-table-tab .schedule-table-content table thead tr th span {
+	color: #f5523b;
+	font-size: 16px;
+	display: block;
+	font-weight: 400;
+}
+
+.schedule-table-tab .schedule-table-content table tbody tr {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.schedule-table-tab .schedule-table-content table tbody tr td {
+	border-right: 1px solid #e5e5e5;
+	width: 260px;
+	height: 134px;
+	padding: 37px 0 36px;
+}
+
+.schedule-table-tab .schedule-table-content table tbody tr td h5 {
+	color: #171822;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.schedule-table-tab .schedule-table-content table tbody tr td p {
+	color: #171822;
+	margin-bottom: 0;
+}
+
+.schedule-table-tab .schedule-table-content table tbody tr td p span {
+	color: #a0a1b5;
+}
+
+.schedule-table-tab .schedule-table-content table tbody tr td.event-time {
+	width: 140px;
+	color: #f44949;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.schedule-table-tab .schedule-table-content table tbody tr td.break h5 {
+	margin-bottom: 0;
+}
+
+.schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover {
+	background: -o-linear-gradient(330deg, #ee8425, #f9488b);
+	background: linear-gradient(120deg, #ee8425, #f9488b);
+}
+
+.schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover h5 {
+	color: #ffffff;
+}
+
+.schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover p {
+	color: #ffffff;
+}
+
+.schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover p span {
+	color: #ffffff;
+}
 
 /*---------------------
   Blog
@@ -843,7 +1234,7 @@ Lang and currency
 }
 
 .blog-item .bi-text h5 a {
-	color: #ffffff;
+	color: #151414;
 	line-height: 24px;
 	font-weight: 600;
 	display: block;
@@ -855,7 +1246,7 @@ Lang and currency
 
 .blog-item .bi-text h3 a {
 	font-size: 28px;
-	color: #ffffff;
+	color: #f3f0f0;
 	font-weight: 600;
 	line-height: 36px;
 	display: block;
@@ -951,6 +1342,7 @@ Lang and currency
 /*---------------------
   Blog Details Section
 -----------------------*/
+
 .blog-details-section {
 	padding-top: 70px;
 }

@@ -14,7 +14,7 @@
 	height: 80px;
 	background-color: #fff;
 	width: 100%;
-	position: fixed;
+	position: static;
 }
 
 .header-section.header-normal {
