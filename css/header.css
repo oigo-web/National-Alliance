@@ -15,6 +15,7 @@
 	background-color: #fff;
 	width: 100%;
 	position: fixed;
+	z-index: 50;
 }
 
 .header-section.header-normal {
@@ -32,7 +33,7 @@
 .nav-menu {
 
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	padding-top: 20px;
 }
@@ -72,6 +73,12 @@
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 	text-transform: capitalize;
+}
+
+ul,
+ol {
+	padding: 0 160px 0 0;
+	margin: 0;
 }
 
 ul li .dropdown li a:hover {
@@ -139,7 +146,7 @@ ul li a:after {
 .theme-tags {
 	position: fixed;
 	top: 20px;
-	right: 16px;
+	right: 60px;
 	display: flex;
 	gap: 18px;
 }
@@ -233,10 +240,10 @@ fill {
 		color: #ffffff;
 	}
 
-	.slicknav_nav .slicknav_row:hover {
+	/* .slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
 		background: #f44949;
 		color: #ffffff;
-	}
+	} */
 
 }
