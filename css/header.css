@@ -98,7 +98,8 @@ ul li:hover>a:after {
 .mainmenu ul li:hover .dropdown {
 	opacity: 1;
 	visibility: visible;
-	top: 50px;
+	top: 30px;
+	padding: 10px;
 }
 
 .mainmenu ul li a {
