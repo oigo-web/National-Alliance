@@ -222,13 +222,13 @@ fill {
 		-webkit-transition: all 0.3s;
 		-o-transition: all 0.3s;
 		transition: all 0.3s;
+		color: #fff;
 	}
 
 	ul,
 	li,
 	a {
 		padding: 10px 0;
-		color: #fff;
 		text-transform: uppercase;
 	}
 
