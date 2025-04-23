@@ -166,14 +166,14 @@ sup {
 }
 
 a {
-	color: #007bff;
+	color: #222;
 	text-decoration: none;
 	background-color: transparent
 }
 
 a:hover {
-	color: #0056b3;
-	text-decoration: underline
+	color: #28a745;
+	/* text-decoration: underline */
 }
 
 a:not([href]) {
@@ -661,9 +661,11 @@ pre code {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	padding-bottom: 50px;
 	/* margin-right: -15px;
     margin-left:-15px */
 }
+
 
 .no-gutters {
 	margin-right: 0;
