@@ -678,7 +678,7 @@ Lang and currency
 	line-height: 36px;
 	list-style-type: none;
 	display: inline-block;
-	margin-right: 42px;
+	/* margin-right: 42px; */
 }
 
 .cs-text ul li:last-child {
@@ -744,7 +744,7 @@ Lang and currency
 
 .footer-text {
 	text-align: center;
-	padding-top: 60px;
+	/* padding-top: 60px; */
 }
 
 .footer-text .ft-logo {
@@ -842,7 +842,7 @@ Lang and currency
 	font-size: 40px;
 	color: #171822;
 	font-weight: 600;
-	margin-bottom: 14px;
+	margin-bottom: 30px;
 }
 
 .breadcrumb-text .bt-option a {
@@ -1523,15 +1523,15 @@ Lang and currency
 }
 
 .comment-form input {
-	width: 100%;
+	width: 80%;
 	height: 46px;
-	background: #f4f6f8;
+	/* background: #f4f6f8; */
 	padding-left: 20px;
 	padding-right: 5px;
-	border: none;
+	border: 2px solid #25c222;
 	margin-bottom: 30px;
-	border-radius: 2px;
-	border: 1px solid transparent;
+	/* border-radius: 2px;	 */
+	/* border: 1px solid transparent; */
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
@@ -1558,21 +1558,21 @@ Lang and currency
 }
 
 .comment-form input:focus {
-	border: 1px solid #f44949;
+	border: 1px solid #286922;
 	color: #171822;
 }
 
 .comment-form textarea {
-	width: 100%;
+	width: 88%;
 	height: 120px;
-	background: #f4f6f8;
+	/* background: #f4f6f8; */
 	padding-left: 20px;
-	border: none;
+	border: 2px solid #25c222;
 	padding-top: 12px;
 	padding-right: 5px;
 	margin-bottom: 32px;
-	border-radius: 2px;
-	border: 1px solid transparent;
+	/* border-radius: 2px; */
+	/* border: 1px solid transparent; */
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
@@ -1600,7 +1600,7 @@ Lang and currency
 }
 
 .comment-form textarea:focus {
-	border: 1px solid #f44949;
+	border: 1px solid #286922;
 	color: #171822;
 }
 
@@ -1668,6 +1668,7 @@ Lang and currency
 
 .cc-text .cs-text .ct-address span {
 	color: #ffffff;
+	padding: 0 0 0 25px;
 }
 
 .cc-text .cs-text .ct-address p {
@@ -1676,6 +1677,7 @@ Lang and currency
 
 .cc-text .cs-text ul li {
 	color: #ffffff;
+	padding: 0 0 0 25px;
 }
 
 .cc-text .cs-text ul li span {
@@ -2100,8 +2102,8 @@ Lang and currency
 	}
 
 	.cc-text {
-		padding-left: 30px;
-		padding-top: 35px;
+		padding-left: 14px;
+		padding-top: 28px;
 	}
 
 	.story-item h2 {
@@ -2116,5 +2118,9 @@ Lang and currency
 		width: 35px;
 		line-height: 35px;
 		margin-left: 5px;
+	}
+
+	.section-title p {
+		font-size: 16px;
 	}
 }
