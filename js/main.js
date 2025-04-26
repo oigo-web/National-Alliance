@@ -121,6 +121,7 @@
 
 })(jQuery);
 
+<<<<<<< HEAD
 /* >>> Add >>> Курс валют */
 const exchangeRates = {
 	"date": "14.04.2025",
@@ -171,5 +172,7 @@ document.querySelectorAll('.language-option').forEach(option => {
 /* <<< End >>> */
 
 
+=======
+>>>>>>> cfaed1b6c13a56838ffc762feee25d326c72dcfb
 // Use this for experimental purposes only
 // $(document).ready(function() {
