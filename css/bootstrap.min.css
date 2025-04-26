@@ -166,14 +166,14 @@ sup {
 }
 
 a {
-	color: #007bff;
+	color: #222;
 	text-decoration: none;
 	background-color: transparent
 }
 
 a:hover {
-	color: #0056b3;
-	text-decoration: underline
+	color: #28a745;
+	/* text-decoration: underline */
 }
 
 a:not([href]) {
@@ -661,9 +661,11 @@ pre code {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	/* padding-bottom: 50px; */
 	/* margin-right: -15px;
     margin-left:-15px */
 }
+
 
 .no-gutters {
 	margin-right: 0;
@@ -748,8 +750,9 @@ pre code {
 .col-xl-auto {
 	position: relative;
 	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px
+	/* padding-right: 15px;
+	padding-left: 15px */
+	padding-top: 36px;
 }
 
 .col {
@@ -1575,7 +1578,8 @@ pre code {
 	.col-lg-6 {
 		-ms-flex: 0 0 50%;
 		flex: 0 0 50%;
-		max-width: 50%
+		max-width: 50%;
+		padding-bottom: 30px;
 	}
 
 	.col-lg-7 {
@@ -1586,8 +1590,9 @@ pre code {
 
 	.col-lg-8 {
 		-ms-flex: 0 0 66.666667%;
-		flex: 0 0 66.666667%;
-		max-width: 66.666667%
+		flex: 0 0 auto;
+		max-width: 100%;
+		padding: 0 10px;
 	}
 
 	.col-lg-9 {
@@ -1705,9 +1710,9 @@ pre code {
 		margin-left: 25%
 	}
 
-	.offset-lg-4 {
+	/* .offset-lg-4 {
 		margin-left: 33.333333%
-	}
+	} */
 
 	.offset-lg-5 {
 		margin-left: 41.666667%
