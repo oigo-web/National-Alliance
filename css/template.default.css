@@ -51,6 +51,18 @@ h6 {
 	font-size: 16px;
 }
 
+.si-title__text {
+	font-size: 16px;
+	font-family: "Work Sans", sans-serif;
+	color: #6a6b7c;
+	font-weight: 400;
+	line-height: 28px;
+	margin: 0 10px 40px 10px;
+	padding: 0 16px;
+	text-align: justify;
+	word-spacing: -3px;
+}
+
 p {
 	font-size: 16px;
 	font-family: "Work Sans", sans-serif;
@@ -58,7 +70,9 @@ p {
 	font-weight: 400;
 	line-height: 28px;
 	margin: 0 10px 40px 10px;
-	padding-left: 16px;
+	padding: 0 16px;
+	text-align: center;
+	word-spacing: -3px;
 }
 
 /* adding ol and ul */
