@@ -275,12 +275,14 @@
 	margin-bottom: 60px;
 	-webkit-box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
 	box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
+	padding: 0;
 }
 
 .schedule-tab .nav-tabs .nav-item {
 	border-right: 1px solid #e7e7e8;
 	width: 20%;
 	text-align: center;
+	background-color: darkgreen;
 }
 
 .schedule-tab .nav-tabs .nav-item:last-child {
@@ -295,12 +297,12 @@
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link.active {
-	border-radius: 2px;
+	/* border-radius: 1px; */
 	border-color: #e7e7e8;
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link.active h5 {
-	color: #ffffff;
+	color: darkgreen;
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link.active p {
@@ -308,7 +310,7 @@
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link h5 {
-	color: #171822;
+	color: #fff;
 	font-weight: 600;
 }
 
@@ -344,6 +346,7 @@
 
 .schedule-tab .st-content .sc-text {
 	padding: 58px 0;
+	text-align: left;
 }
 
 .schedule-tab .st-content .sc-text h4 {
@@ -378,7 +381,7 @@
 }
 
 .schedule-tab .st-content .sc-widget {
-	padding: 58px 0;
+	padding: 20px 0;
 }
 
 .schedule-tab .st-content .sc-widget li {
@@ -387,7 +390,8 @@
 	color: #6a6b7c;
 	line-height: 32px;
 	position: relative;
-	padding-left: 22px;
+	padding: 6px 0 0 22px;
+	text-align: left;
 }
 
 .schedule-tab .st-content .sc-widget li i {
