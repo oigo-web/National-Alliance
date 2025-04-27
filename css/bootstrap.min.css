@@ -4677,7 +4677,8 @@ input[type=submit].btn-block {
 
 .nav-link:focus,
 .nav-link:hover {
-	text-decoration: none
+	text-decoration: none;
+	transition: all .3ms ease 0ms;
 }
 
 .nav-link.disabled {

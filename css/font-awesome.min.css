@@ -241,7 +241,8 @@
 }
 
 .fa-user:before {
-	content: "\f007"
+	content: "\f007";
+	color: #212529;
 }
 
 .fa-film:before {
@@ -304,7 +305,8 @@
 }
 
 .fa-clock-o:before {
-	content: "\f017"
+	content: "\f017";
+	color: #212529;
 }
 
 .fa-road:before {
@@ -464,7 +466,8 @@
 }
 
 .fa-map-marker:before {
-	content: "\f041"
+	content: "\f041";
+	color: #212529;
 }
 
 .fa-adjust:before {
@@ -785,7 +788,8 @@
 }
 
 .fa-phone:before {
-	content: "\f095"
+	content: "\f095";
+	color: #212529;
 }
 
 .fa-square-o:before {
@@ -875,7 +879,8 @@
 }
 
 .fa-globe:before {
-	content: "\f0ac"
+	content: "\f0ac";
+	color: #212529;
 }
 
 .fa-wrench:before {
@@ -1029,7 +1034,8 @@
 }
 
 .fa-envelope:before {
-	content: "\f0e0"
+	content: "\f0e0";
+	color: #212529;
 }
 
 .fa-linkedin:before {
