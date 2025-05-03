@@ -813,6 +813,10 @@
 	content: "\f09a"
 }
 
+.speakers-icone {
+	color: #f44949;
+}
+
 .fa-github:before {
 	content: "\f09b"
 }
