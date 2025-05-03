@@ -220,18 +220,10 @@ fill {
 
 	.dropdown {
 		position: relative;
-		width: 180px;
-		background: #ffffff;
-		z-index: 999;
 		left: 0;
 		top: 0;
-		opacity: 0;
-		visibility: hidden;
-		-webkit-box-shadow: 4px 13px 30px rgba(0, 0, 0, 0.15);
-		box-shadow: 4px 13px 30px rgba(0, 0, 0, 0.15);
-		-webkit-transition: all 0.3s;
-		-o-transition: all 0.3s;
-		transition: all 0.3s;
+		opacity: 1;
+		visibility: visible;
 	}
 
 	.slicknav_nav .slicknav_row,
