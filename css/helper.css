@@ -24,6 +24,10 @@
 	font-size: 18px;
 	color: #6a6b7c;
 	margin-bottom: 15px;
+	text-align: left;
+}
+
+p.sub-title {
 	text-align: center;
 }
 
@@ -38,7 +42,7 @@
 
 .set-bg {
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-position: bottom center;
 }
 
