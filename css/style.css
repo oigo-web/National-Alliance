@@ -270,12 +270,14 @@
 }
 
 .schedule-tab .nav-tabs {
+	display: flex;
+	align-items: center;
 	border: none;
 	border-radius: 2px;
 	margin-bottom: 60px;
 	-webkit-box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
 	box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
-	padding: 0;
+	padding: 10px 15px;
 }
 
 .schedule-tab .nav-tabs .nav-item {
@@ -312,6 +314,8 @@
 .schedule-tab .nav-tabs .nav-item .nav-link h5 {
 	color: #fff;
 	font-weight: 600;
+	font-size: 14px;
+	padding: 8px;
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link p {
@@ -942,7 +946,7 @@ Lang and currency
 }
 
 .story-section .section-title h2 {
-	margin-bottom: 0;
+	margin: 80px 0 0 0;
 }
 
 .story-left {
@@ -2078,7 +2082,7 @@ Lang and currency
 	}
 
 	.schedule-tab .nav-tabs .nav-item {
-		width: 33.33%;
+		width: 100%;
 	}
 
 	.member-item {

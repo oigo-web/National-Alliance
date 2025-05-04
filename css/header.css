@@ -247,6 +247,10 @@ fill {
 		text-transform: uppercase;
 	}
 
+	.nav-tablet ul li {
+		padding: 0;
+	}
+
 	.slicknav_nav {
 		margin: 20px 0 0 0;
 	}
