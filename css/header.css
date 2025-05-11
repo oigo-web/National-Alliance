@@ -9,7 +9,7 @@
 
 .header-section {
 	height: 80px;
-	background-color: #fff;
+	background-color: var(--white);
 	width: 100%;
 
 	position: fixed;
@@ -17,7 +17,7 @@
 }
 
 .header-section.header-normal {
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid var(--light);
 }
 
 .logo {
@@ -46,7 +46,7 @@
 .dropdown {
 	position: absolute;
 	width: 180px;
-	background: #ffffff;
+	background: var(--white);
 	z-index: 99;
 	left: 0;
 	top: -10px;
@@ -59,6 +59,7 @@
 	transition: all 0.3s;
 }
 
+/* Dark mode btn */
 .dark-mode-btn {
     order: 9;
     display: flex;
@@ -80,8 +81,7 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    /* background-color: var(--white); */
-		background-color: white;
+    background-color: var(--white);
     transition: left 0.2s ease-in;
 }
 
@@ -93,6 +93,8 @@
     position: relative;
     z-index: 9;
 }
+
+/* ========================= */
 
 @media(max-width: 990px) {}
 
@@ -118,7 +120,7 @@ ol {
 }
 
 ul li .dropdown li a:hover {
-	color: #f44949;
+	color: var(--green);
 }
 
 ul li .dropdown li a:after {
@@ -142,7 +144,7 @@ ul li:hover>a:after {
 
 .mainmenu ul li a {
 	font-size: 11px;
-	color: #171822;
+	color: var(--pureblack);
 	text-transform: uppercase;
 	font-weight: 600;
 	padding: 10px 0;
@@ -156,7 +158,7 @@ ul li a:after {
 	bottom: 6px;
 	height: 2px;
 	width: 100%;
-	background: #25c222;
+	background: var(--green);
 	content: "";
 	opacity: 0;
 	-webkit-transition: all 0.3s;
@@ -170,7 +172,7 @@ ul li a:after {
 
 .langs {
 	display: inline;
-	color: black;
+	color: var(--pureblack);
 	list-style: none;
 	text-decoration: none;
 }
@@ -185,22 +187,22 @@ ul li a:after {
 
 .icone__youtube,
 fill {
-	color: #222;
+	color: var(--pureblack);
 	transition: all .2s ease 0s;
 }
 
 .icone__youtube:hover {
-	color: #25c222;
+	color: var(--green);
 }
 
-.switcher__theme {
+/* .switcher__theme {
 	color: #171822;
 	transition: all .2s ease 0s;
 }
 
 .switcher__theme:hover {
 	color: #25c222;
-}
+} */
 
 
 /* Tablet */
@@ -224,10 +226,10 @@ fill {
 	} */
 
 
-	.theme-tags {
+	/* .theme-tags {
 		top: 8px;
 		right: 30px;
-	}
+	} */
 
 	.slicknav_menu {
 		display: block;

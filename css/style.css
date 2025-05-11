@@ -1,3 +1,20 @@
+/*---------------------
+  Pricing Section
+-----------------------*/
+@import "pricing.css";
+
+/*---------------------
+  Speaker Section
+-----------------------*/
+@import "speaker.css";
+
+/*---------------------
+  Footer
+-----------------------*/
+
+@import "footer.css";
+
+
 /******************************************************************
   Template Name: National Alliance
   Description: NAT Event HTML Template
@@ -48,30 +65,38 @@
 -----------------------*/
 @import "hero.css";
 
-
-
+/* ======================= */
 
 :root {
-	--white: #fff;
-	--black: #6a6b7c;
-	--pureblack: #000;
-	--green: #53c90f;
+  /* Общие цвета */
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #6a6b7c;
+  --green: #53c90f;
 
-	--text-color: var(--black);
-	--dark-bg: var(--black);
+  /* Светлая тема */
+  --page-bg: var(--white);
+  --text-color: var(--gray);
+  --btn-bg: var(--gray);
+  --btn-knob: var(--white);
+}
 
-	--accent: var(--green);
-
-	/* Light mode */
-	--page-bg: var(--white);
-	--text-color: var(--black);
+[data-theme="dark"] {
+  --page-bg: var(--black);
+  --text-color: var(--white);
+  --btn-bg: var(--white);
+  --btn-knob: var(--black);
 }
 
 html, body {
-	/* light mode */
-	background-color: var(--white);
-	color: var(--text-color);
+  background-color: var(--page-bg);
+  color: var(--black);
+  transition: 0.3s;
 }
+
+
+/* ====================== */
+
 
 /*---------------------
   Conter
@@ -428,11 +453,8 @@ html, body {
 	top: 7px;
 }
 
-/*---------------------
-  Pricing Section
------------------------*/
 
-@import "pricing.css";
+
 
 /*---------------------
   Latest Blog
@@ -744,11 +766,7 @@ Lang and currency
 	width: 100%;
 }
 
-/*---------------------
-  Footer
------------------------*/
 
-/* @import "footer.css"; */
 
 
 .footer-section {
@@ -1117,10 +1135,7 @@ Lang and currency
 	font-weight: 500;
 }
 
-/*---------------------
-  Speaker Section
------------------------*/
-@import "speaker.css";
+
 
 /* --------------------- 
   Schedule Section
