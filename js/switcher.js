@@ -5,16 +5,16 @@ const btnDarkMode = document.querySelector(".dark-mode-btn");
 //  1. Test
 if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
     btnDarkMode.classList.add("dark-mode-btn--active");
-    document.documentElement.setAttribute('data-theme', 'dark');
+    document.body.classList.add("dark");
 }
 
 // 2. Checked the dark mode in localStorage
 if (localStorage.getItem('darkMode') === 'dark') {
     btnDarkMode.classList.add("dark-mode-btn--active");
-    document.documentElement.setAttribute('data-theme', 'dark');
+    document.body.classList.add("dark");
 } else if (localStorage.getItem("darkMode") === "light") {
     btnDarkMode.classList.remove("dark-mode-btn--active");
-    document.documentElement.setAttribute('data-theme', 'light');
+    document.body.classList.remove("dark");
 }
 
 
@@ -26,11 +26,11 @@ window
 
     if (newColorScheme === 'dark'){
         btnDarkMode.classList.add("dark-mode-btn--active");
-        document.documentElement.setAttribute('data-theme', 'dark');
+        document.body.classList.add("dark");
         localStorage.setItem("darkMode", "dark");
     } else {
         btnDarkMode.classList.remove("dark-mode-btn--active");
-        document.documentElement.setAttribute('data-theme', 'light');
+        document.body.classList.remove("dark");
         localStorage.setItem("darkMode", "light");
     }
 })
@@ -46,5 +46,4 @@ btnDarkMode.onclick = function () {
         localStorage.setItem('darkMode', 'light');
     }
 }
-
 // ===============================================================

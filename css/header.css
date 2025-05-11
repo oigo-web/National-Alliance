@@ -59,7 +59,7 @@
 	transition: all 0.3s;
 }
 
-/* Dark mode btn */
+/* DURK MODE BTN */
 .dark-mode-btn {
     order: 9;
     display: flex;
@@ -86,14 +86,13 @@
 }
 
 .dark-mode-btn--active::before {
-    left: 26px;
+    left: 24px;
 }
 
 .dark-mode-btn__icon {
     position: relative;
     z-index: 9;
 }
-
 /* ========================= */
 
 @media(max-width: 990px) {}
