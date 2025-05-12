@@ -22,7 +22,7 @@
 .hero .hero-text,
 h2 {
 	font-size: 30px;
-	color: #ffffff;
+	color: var(--white);
 	line-height: 1.2;
 	font-weight: 600;
 	letter-spacing: 2px;
@@ -48,9 +48,9 @@ h2 {
 
 
 .button:hover {
-	color: #000;
-	background-color: #fff;
-	border: #fff;
+	color: var(--black);
+	background-color: var(--white);
+	border: var(--white);
 }
 
 
@@ -59,7 +59,7 @@ h2 {
 	display: inline-block;
 	width: 10px;
 	height: 1em;
-	background-color: #53c90f;
+	background-color: var(--green);
 	margin-left: 1px;
 	position: relative;
 	vertical-align: middle;
@@ -71,7 +71,7 @@ h2 {
 
 	0%,
 	to {
-		background-color: #53c90f;
+		background-color: var(--green);
 	}
 
 	50% {

@@ -1,3 +1,20 @@
+/*---------------------
+  Pricing Section
+-----------------------*/
+@import "pricing.css";
+
+/*---------------------
+  Speaker Section
+-----------------------*/
+@import "speaker.css";
+
+/*---------------------
+  Footer
+-----------------------*/
+
+@import "footer.css";
+
+
 /******************************************************************
   Template Name: National Alliance
   Description: NAT Event HTML Template
@@ -48,6 +65,49 @@
 -----------------------*/
 @import "hero.css";
 
+/* ======================= */
+:root {
+  /* Общие цвета */
+  --white: #fff;
+  --black: #000000;
+  --gray: #676767;
+  --green: #4c9323;
+	--light: #f8f9fa;
+	--dark: #25292d;
+	--red: #dc3545;
+	--fotter-bg: #171822;
+	--shadow: #bebbbb;
+	--line: #e8e8e8;
+	
+  /* Светлая тема */
+  --page-bg: var(--light);
+  --text-color: var(--dark);
+  --btn-bg: var(--gray);
+  --btn-knob: var(--white);
+	--green: #54ad31;
+}
+
+[data-theme="dark"] {
+  --page-bg: var(--dark);
+  --text-color: var(--white);
+  --btn-bg: var(--gray);
+  --btn-knob: #eee;
+  --green: #34741b;
+  --red: #ff6b6b;
+  --footer-bg: #0e0f1a;
+  --secondary-text-color: #d2d2d2;
+  --shadow: #00000033;
+}
+
+html, body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+
+/* ====================== */
+
 
 
 /*---------------------
@@ -60,11 +120,11 @@
 
 .counter-section .counter-text span {
 	font-size: 16px;
-	color: #ffffff;
+	color: var(--white);
 }
 
 .counter-section .counter-text h3 {
-	color: #ffffff;
+	color: var(--white);
 	font-weight: 700;
 	line-height: 38px;
 	margin-top: 10px;
@@ -90,7 +150,7 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	border: 2px solid #ffffff;
+	border: 2px solid var(--white);
 	content: "";
 	opacity: 0.1;
 	border-radius: 4px;
@@ -102,14 +162,14 @@
 
 .counter-section .cd-timer .cd-item span {
 	font-size: 60px;
-	color: #ffffff;
+	color: var(--white);
 	font-weight: 600;
 	line-height: 30px;
 }
 
 .counter-section .cd-timer .cd-item p {
 	font-size: 18px;
-	color: #ffffff;
+	color: var(--white);
 	margin-bottom: 0;
 	line-height: 30px;
 }
@@ -123,8 +183,8 @@
 }
 
 .ha-pic {
-	-webkit-box-shadow: 0px 0px 30px rgba(11, 12, 48, 0.15);
-	box-shadow: 0px 0px 30px rgba(11, 12, 48, 0.15);
+	-webkit-box-shadow: 0px 0px 30px var(--gray);
+	box-shadow: 0px 0px 30px var(--gray);
 	margin-right: 30px;
 }
 
@@ -138,7 +198,7 @@
 }
 
 .ha-text h2 {
-	color: #171822;
+	color: var(--fotter-bg);
 	font-size: 30px;
 	font-weight: 500;
 	margin-bottom: 22px;
@@ -156,16 +216,16 @@
 	list-style: none;
 	font-size: 16px;
 	line-height: 30px;
-	color: #6a6b7c;
+	color: var(--gray);
 }
 
 .ha-text ul li span {
-	color: #f44949;
+	color: var(--red);
 }
 
 .ha-text .ha-btn {
 	font-size: 16px;
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 600;
 	position: relative;
 }
@@ -176,7 +236,7 @@
 	bottom: -6px;
 	height: 2px;
 	width: 100%;
-	background: #f44949;
+	background: var(--red);
 	content: "";
 }
 
@@ -226,7 +286,7 @@
 .member-item .mi-social .mi-social-inner a {
 	display: inline-block;
 	font-size: 18px;
-	color: #ffffff;
+	color: var(--white);
 	margin-right: 10px;
 }
 
@@ -235,7 +295,7 @@
 }
 
 .member-item .mi-text {
-	background: #ffffff;
+	background: var(--white);
 	padding: 16px 0 18px 25px;
 	position: absolute;
 	left: -500px;
@@ -248,14 +308,14 @@
 
 .member-item .mi-text h5 {
 	font-size: 20px;
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 600;
 	margin-bottom: 5px;
 }
 
 .member-item .mi-text span {
 	font-size: 16px;
-	color: #f44949;
+	color: var(--red);
 	display: block;
 }
 
@@ -270,21 +330,19 @@
 }
 
 .schedule-tab .nav-tabs {
-	display: flex;
-	align-items: center;
 	border: none;
 	border-radius: 2px;
 	margin-bottom: 60px;
-	-webkit-box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
-	box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
-	padding: 10px 15px;
+	-webkit-box-shadow: 3px 10px 30px var(--shadow);
+	box-shadow: 3px 10px 30px var(--shadow);
+	padding: 0;
 }
 
 .schedule-tab .nav-tabs .nav-item {
-	border-right: 1px solid #e7e7e8;
+	border-right: 1px solid var(--light);
 	width: 20%;
 	text-align: center;
-	background-color: darkgreen;
+	background-color: var(--green);
 }
 
 .schedule-tab .nav-tabs .nav-item:last-child {
@@ -299,23 +357,21 @@
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link.active {
-	/* border-radius: 1px; */
-	border-color: #e7e7e8;
+	border-color: var(--light);
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link.active h5 {
-	color: darkgreen;
+	color: var(--green);
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link.active p {
-	color: #ffffff;
+	color: var(--btn-bg);
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link h5 {
-	color: #fff;
+	color: var(--white);
 	font-weight: 600;
-	font-size: 14px;
-	padding: 8px;
+	padding: 10px;
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link p {
@@ -323,7 +379,7 @@
 }
 
 .schedule-tab .st-content {
-	border: 1px solid #ebebeb;
+	border: 1px solid var(--light);
 	border-radius: 2px;
 	margin-bottom: 40px;
 	-webkit-transition: all 0.3s;
@@ -332,8 +388,8 @@
 }
 
 .schedule-tab .st-content:hover {
-	-webkit-box-shadow: 3px 12px 30px rgba(23, 24, 34, 0.05);
-	box-shadow: 3px 12px 30px rgba(23, 24, 34, 0.05);
+	-webkit-box-shadow: 3px 12px 30px var(--shadow);
+	box-shadow: 3px 12px 30px var(--shadow);
 	border: 1px solid transparent;
 }
 
@@ -354,7 +410,7 @@
 }
 
 .schedule-tab .st-content .sc-text h4 {
-	color: #171822;
+	color: var(--text-color);
 	font-weight: 600;
 	margin-bottom: 10px;
 }
@@ -363,7 +419,7 @@
 	list-style: none;
 	display: inline-block;
 	font-size: 16px;
-	color: #6a6b7c;
+	color: var(--secondary-text-color);
 	margin-right: 25px;
 	position: relative;
 }
@@ -380,7 +436,7 @@
 }
 
 .schedule-tab .st-content .sc-text ul li i {
-	color: #f44949;
+	color: var(--red);
 	font-size: 14px;
 }
 
@@ -391,7 +447,7 @@
 .schedule-tab .st-content .sc-widget li {
 	list-style: none;
 	font-size: 16px;
-	color: #6a6b7c;
+	color: var(--secondary-text-color);
 	line-height: 32px;
 	position: relative;
 	padding: 6px 0 0 22px;
@@ -399,17 +455,14 @@
 }
 
 .schedule-tab .st-content .sc-widget li i {
-	color: #f44949;
+	color: var(--red);
 	position: absolute;
 	left: 0;
 	top: 7px;
 }
 
-/*---------------------
-  Pricing Section
------------------------*/
 
-@import "pricing.css";
+
 
 /*---------------------
   Latest Blog
@@ -421,8 +474,8 @@ Lang and currency
 --------------------- */
 /* >>> Add >>> Языковой селектор */
 .language-selector ul {
-	background: white;
-	border: 1px solid #ddd;
+	background: var(--white);
+	border: 1px solid var(--light);
 	border-radius: 5px;
 	position: absolute;
 	top: 100%;
@@ -431,7 +484,7 @@ Lang and currency
 }
 
 .language-selector li:hover {
-	background-color: #f0f0f0;
+	background-color: var(--white);
 }
 
 /* --------------------
@@ -439,8 +492,8 @@ Lang and currency
 --------------------- */
 /* >>> Add >>> Языковой селектор */
 .language-selector ul {
-	background: white;
-	border: 1px solid #ddd;
+	background: var(--white);
+	border: 1px solid var(--light);
 	border-radius: 5px;
 	position: absolute;
 	top: 100%;
@@ -449,7 +502,7 @@ Lang and currency
 }
 
 .language-selector li:hover {
-	background-color: #f0f0f0;
+	background-color: var(--white);
 
 }
 
@@ -459,19 +512,17 @@ Lang and currency
 /* <<< End >>> */
 
 .currency-ticker {
-	background-color: #25c222;
-	color: white;
+	background-color: var(--green);
+	color: var(--white);
 	padding: 8px;
 	font-weight: 600;
 	font-size: 14px;
 }
 
-/* font-size: 14px; */
-
 /* >>> Add >>> Бегущая строка */
 .currency-ticker {
-	background-color: #25c222;
-	color: white;
+	background-color: var(--green);
+	color: var(--white);
 	padding: 8px;
 	font-weight: 600;
 	font-size: 14px;
@@ -482,7 +533,7 @@ Lang and currency
 
 
 .latest-blog {
-	background: #f4f6f8;
+	background: var(--light);
 	padding-bottom: 160px;
 }
 
@@ -492,8 +543,8 @@ Lang and currency
 	margin-bottom: 40px;
 	margin-left: 15px;
 	border-radius: 2px;
-	-webkit-box-shadow: 0px 0px 30px rgba(79, 84, 139, 0.15);
-	box-shadow: 0px 0px 30px rgba(79, 84, 139, 0.15);
+	-webkit-box-shadow: 0px 0px 30px var(--shadow);
+	box-shadow: 0px 0px 30px var(--shadow);
 }
 
 .latest-item.large-item {
@@ -517,23 +568,23 @@ Lang and currency
 }
 
 .latest-item.large-item .li-text h4 a {
-	color: #ffffff;
+	color: var(--white);
 	font-weight: 600;
 	line-height: 36px;
 }
 
 .latest-item.large-item .li-text span {
 	font-size: 16px;
-	color: #ffffff;
+	color: var(--white);
 }
 
 .latest-item.large-item .li-text span i {
-	color: #f44949;
+	color: var(--red);
 }
 
 .latest-item .li-tag {
 	font-size: 14px;
-	color: #ffffff;
+	color: var(--white);
 	display: inline-block;
 	padding: 5px 18px;
 	border-radius: 2px;
@@ -556,18 +607,18 @@ Lang and currency
 
 .latest-item .li-text h5 a {
 	display: block;
-	color: #ffffff;
+	color: var(--white);
 	font-weight: 600;
 	line-height: 30px;
 }
 
 .latest-item .li-text span {
 	font-size: 14px;
-	color: #ffffff;
+	color: var(--white);
 }
 
 .latest-item .li-text span i {
-	color: #f44949;
+	color: var(--red);
 }
 
 /*---------------------
@@ -592,13 +643,13 @@ Lang and currency
 }
 
 .newslatter-inner .ni-text h3 {
-	color: #ffffff;
+	color: var(--white);
 	font-weight: 700;
 	margin-bottom: 8px;
 }
 
 .newslatter-inner .ni-text p {
-	color: #ffffff;
+	color: var(--white);
 	margin-bottom: 0;
 }
 
@@ -613,32 +664,32 @@ Lang and currency
 	width: 100%;
 	height: 50px;
 	font-size: 16px;
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 	padding-left: 20px;
-	background: #ffffff;
+	background: var(--white);
 	border-radius: 50px;
 	border: none;
 	padding-right: 140px;
 }
 
 .newslatter-inner .ni-form input::-webkit-input-placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .newslatter-inner .ni-form input::-moz-placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .newslatter-inner .ni-form input:-ms-input-placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .newslatter-inner .ni-form input::-ms-input-placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .newslatter-inner .ni-form input::placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .newslatter-inner .ni-form button {
@@ -646,7 +697,7 @@ Lang and currency
 	height: 40px;
 	text-align: center;
 	border: none;
-	color: #ffffff;
+	color: var(--white);
 	font-size: 16px;
 	font-weight: 600;
 	border-radius: 50px;
@@ -666,12 +717,12 @@ Lang and currency
 
 .cs-text .ct-address span {
 	font-size: 16px;
-	color: #6a6b7c;
+	color: var(--gray);
 }
 
 .cs-text .ct-address p {
 	font-size: 18px;
-	color: #171822;
+	color: var(--fotter-bg);
 	line-height: 30px;
 	margin-top: 8px;
 }
@@ -682,11 +733,10 @@ Lang and currency
 
 .cs-text ul li {
 	font-size: 18px;
-	color: #171822;
+	color: var(--fotter-bg);
 	line-height: 36px;
 	list-style-type: none;
 	display: inline-block;
-	/* margin-right: 42px; */
 }
 
 .cs-text ul li:last-child {
@@ -695,48 +745,44 @@ Lang and currency
 
 .cs-text ul li span {
 	font-size: 16px;
-	color: #6a6b7c;
+	color: var(--gray);
 	display: block;
 }
 
 .cs-text .ct-links span {
 	font-size: 16px;
-	color: #6a6b7c;
+	color: var(--gray);
 }
 
 .cs-text .ct-links p {
 	font-size: 18px;
-	color: #171822;
+	color: var(--fotter-bg);
 	line-height: 30px;
 	margin-top: 8px;
 }
 
 .cs-map {
 	height: 400px;
-	-webkit-box-shadow: 0px 12px 30px rgba(11, 12, 48, 0.15);
-	box-shadow: 0px 12px 30px rgba(11, 12, 48, 0.15);
+	-webkit-box-shadow: 0px 12px 30px var(--gray);
+	box-shadow: 0px 12px 30px var(--gray);
 }
 
 .cs-map iframe {
 	width: 100%;
 }
 
-/*---------------------
-  Footer
------------------------*/
 
-/* @import "footer.css"; */
 
 
 .footer-section {
-	background: #171822;
+	background: var(--fotter-bg);
 	padding-top: 50px;
 	padding-bottom: 60px;
 }
 
 .partner-logo {
 	padding-bottom: 50px;
-	border-bottom: 1px solid #2f3039;
+	border-bottom: 1px solid var(--gray);
 }
 
 .partner-logo .pl-table {
@@ -752,7 +798,6 @@ Lang and currency
 
 .footer-text {
 	text-align: center;
-	/* padding-top: 60px; */
 }
 
 .footer-text .ft-logo {
@@ -779,7 +824,7 @@ Lang and currency
 
 .footer-text ul li a {
 	font-size: 18px;
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 	display: inline-block;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -787,25 +832,25 @@ Lang and currency
 }
 
 .footer-text ul li a:hover {
-	color: #f44949;
+	color: var(--red);
 }
 
 .footer-text .copyright-text {
 	font-size: 14px;
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 	margin-bottom: 28px;
 }
 
 .footer-text .copyright-text i {
-	color: #f44949;
+	color: var(--red);
 }
 
 .footer-text .copyright-text a {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .footer-text .copyright-text a:hover {
-	color: #f44949;
+	color: var(--red);
 }
 
 .footer-text .ft-social a {
@@ -815,8 +860,8 @@ Lang and currency
 	text-align: center;
 	line-height: 40px;
 	font-size: 16px;
-	color: #a3a3ae;
-	border: 1px solid #45464e;
+	color: var(--gray);
+	border: 1px solid var(--gray);
 	border-radius: 50%;
 	margin-right: 15px;
 	padding: 0;
@@ -827,8 +872,8 @@ Lang and currency
 }
 
 .footer-text .ft-social a:hover {
-	border: 1px solid #25c222;
-	color: #25c222;
+	border: 1px solid var(--green);
+	color: var(--green);
 }
 
 /* ----------------------------------- Other Pages Styles ------------------------------- */
@@ -844,18 +889,19 @@ Lang and currency
 
 .breadcrumb-text {
 	text-align: center;
+	margin-top: 80px;
 }
 
 .breadcrumb-text h2 {
-	font-size: 40px;
-	color: #171822;
+	font-size: 36px;
+	color: var(--te);
 	font-weight: 600;
 	margin-bottom: 30px;
 }
 
 .breadcrumb-text .bt-option a {
 	font-size: 18px;
-	color: #6a6b7c;
+	color: var(--gray);
 	display: inline-block;
 	margin-right: 25px;
 	position: relative;
@@ -871,7 +917,7 @@ Lang and currency
 
 .breadcrumb-text .bt-option span {
 	display: inline-block;
-	color: #a0a1b5;
+	color: var(--secondory-text-color)
 }
 
 /*---------------------
@@ -900,8 +946,8 @@ Lang and currency
 }
 
 .about-pic {
-	-webkit-box-shadow: 0px 0px 30px rgba(11, 12, 48, 0.15);
-	box-shadow: 0px 0px 30px rgba(11, 12, 48, 0.15);
+	-webkit-box-shadow: 0px 0px 30px var(--gray);
+	box-shadow: 0px 0px 30px var(--gray);
 }
 
 .about-pic img {
@@ -913,7 +959,7 @@ Lang and currency
 }
 
 .about-text h3 {
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 600;
 	margin-bottom: 25px;
 }
@@ -924,13 +970,13 @@ Lang and currency
 
 .about-text ul li {
 	font-size: 16px;
-	color: #6a6b7c;
+	color: var(--gray);
 	line-height: 30px;
 	list-style: none;
 }
 
 .about-text ul li span {
-	color: #f44949;
+	color: var(--red);
 }
 
 /*---------------------
@@ -943,10 +989,11 @@ Lang and currency
 
 .story-section .section-title {
 	text-align: left;
+	margin-top: 150px;
 }
 
 .story-section .section-title h2 {
-	margin: 80px 0 0 0;
+	margin-bottom: 0;
 }
 
 .story-left {
@@ -966,7 +1013,7 @@ Lang and currency
 }
 
 .story-item h2 {
-	color: #f44949;
+	color: var(--red);
 	font-weight: 600;
 	float: left;
 	margin-right: 30px;
@@ -978,7 +1025,7 @@ Lang and currency
 }
 
 .story-item .si-text h4 {
-	color: #171822;
+	color: var(--text-color);
 	font-weight: 600;
 	line-height: 36px;
 	margin: 26px 0 0 0;
@@ -1013,8 +1060,8 @@ Lang and currency
 	text-align: center;
 	line-height: 50px;
 	font-size: 30px;
-	color: #171822;
-	background: #f4f6f8;
+	color: var(--fotter-bg);
+	background: var(--light);
 	border-radius: 50%;
 	position: absolute;
 	left: -66px;
@@ -1027,12 +1074,12 @@ Lang and currency
 	transition: all 0.3s;
 }
 
-.testimonial-slider.owl-carousel .owl-nav button:hover {
+/* .testimonial-slider.owl-carousel .owl-nav button:hover {
 	background: -webkit-gradient(linear, left top, right top, from(#ee8425), to(#f9488b));
 	background: -o-linear-gradient(left, #ee8425, #f9488b);
 	background: linear-gradient(to right, #ee8425, #f9488b);
-	color: #ffffff;
-}
+	color: var(--white);
+} */
 
 .testimonial-slider.owl-carousel .owl-nav button.owl-next {
 	left: auto;
@@ -1040,9 +1087,9 @@ Lang and currency
 }
 
 .testimonial-item {
-	background: #ffffff;
-	-webkit-box-shadow: 0px 6px 20px rgba(11, 12, 48, 0.15);
-	box-shadow: 0px 6px 20px rgba(11, 12, 48, 0.15);
+	background: var(--white);
+	-webkit-box-shadow: 0px 6px 20px var(--gray);
+	box-shadow: 0px 6px 20px var(--gray);
 	border-radius: 4px;
 	position: relative;
 	padding: 40px 40px 15px 40px;
@@ -1077,27 +1124,24 @@ Lang and currency
 
 .testimonial-item .ti-author .ta-text h5 {
 	font-size: 20px;
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 600;
 	margin-bottom: 5px;
 }
 
 .testimonial-item .ti-author .ta-text span {
 	display: block;
-	color: #f44949;
+	color: var(--red);
 }
 
 .testimonial-item p {
 	font-size: 20px;
-	color: #171822;
+	color: var(--fotter-bg);
 	line-height: 32px;
 	font-weight: 500;
 }
 
-/*---------------------
-  Speaker Section
------------------------*/
-@import "speaker.css";
+
 
 /* --------------------- 
   Schedule Section
@@ -1115,12 +1159,12 @@ Lang and currency
 	border: none;
 	border-radius: 4px;
 	margin-bottom: 50px;
-	-webkit-box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
-	box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
+	-webkit-box-shadow: 3px 10px 30px var(--shadow);
+	box-shadow: 3px 10px 30px var(--shadow);
 }
 
 .schedule-table-tab .nav-tabs .nav-item {
-	border-right: 1px solid #e7e7e8;
+	border-right: 1px solid var(--light);
 	width: 20%;
 	text-align: center;
 }
@@ -1137,72 +1181,72 @@ Lang and currency
 	text-align: center;
 	font-size: 20px;
 	font-weight: 600;
-	color: #171822;
+	color: var(--fotter-bg);
 }
 
 .schedule-table-tab .nav-tabs .nav-item .nav-link.active {
-	border-color: #e7e7e8;
-	color: #ffffff;
+	border-color: var(--light);
+	color: var(--white);
 }
 
 .schedule-table-tab .schedule-table-content table {
 	width: 100%;
 	text-align: center;
-	border: 1px solid #e1e1e1;
+	border: 1px solid var(--light);
 }
 
 .schedule-table-tab .schedule-table-content table thead {
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid var(--light);
 }
 
 .schedule-table-tab .schedule-table-content table thead tr th {
-	border-right: 1px solid #e5e5e5;
+	border-right: 1px solid var(--light);
 	padding: 24px 0 26px;
 }
 
 .schedule-table-tab .schedule-table-content table thead tr th strong {
 	font-size: 24px;
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 600;
 	margin-bottom: 8px;
 }
 
 .schedule-table-tab .schedule-table-content table thead tr th span {
-	color: #f5523b;
+	color: var(--red);
 	font-size: 16px;
 	display: block;
 	font-weight: 400;
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr {
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid var(--light);
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td {
-	border-right: 1px solid #e5e5e5;
+	border-right: 1px solid var(--light);
 	width: 260px;
 	height: 134px;
 	padding: 37px 0 36px;
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td h5 {
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 600;
 	margin-bottom: 10px;
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td p {
-	color: #171822;
+	color: var(--fotter-bg);
 	margin-bottom: 0;
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td p span {
-	color: #a0a1b5;
+	color: var(--secondory-text-color)
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td.event-time {
 	width: 140px;
-	color: #f44949;
+	color: var(--red);
 	font-size: 24px;
 	font-weight: 600;
 }
@@ -1211,21 +1255,21 @@ Lang and currency
 	margin-bottom: 0;
 }
 
-.schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover {
+/* .schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover {
 	background: -o-linear-gradient(330deg, #ee8425, #f9488b);
 	background: linear-gradient(120deg, #ee8425, #f9488b);
-}
+} */
 
 .schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover h5 {
-	color: #ffffff;
+	color: var(--white);
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover p {
-	color: #ffffff;
+	color: var(--white);
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover p span {
-	color: #ffffff;
+	color: var(--white);
 }
 
 /*---------------------
@@ -1243,14 +1287,14 @@ Lang and currency
 	position: relative;
 	border-radius: 10px;
 	margin-bottom: 30px;
-	-webkit-box-shadow: 0px 0px 30px rgba(11, 12, 48, 0.15);
-	box-shadow: 0px 0px 30px rgba(11, 12, 48, 0.15);
+	-webkit-box-shadow: 0px 0px 30px var(--shadow);
+	box-shadow: 0px 0px 30px var(--shadow);
 }
 
 .blog-item .bi-tag {
 	font-size: 12px;
 	font-weight: 600;
-	color: #ffffff;
+	color: var(--white);
 	display: inline-block;
 	padding: 3px 20px 5px;
 	border-radius: 2px;
@@ -1286,7 +1330,7 @@ Lang and currency
 }
 
 .blog-item .bi-text h5 a {
-	color: #151414;
+	color: var(--black);
 	line-height: 24px;
 	font-weight: 600;
 	display: block;
@@ -1298,7 +1342,7 @@ Lang and currency
 
 .blog-item .bi-text h3 a {
 	font-size: 28px;
-	color: #f3f0f0;
+	color: var(--light);
 	font-weight: 600;
 	line-height: 36px;
 	display: block;
@@ -1306,12 +1350,12 @@ Lang and currency
 
 .blog-item .bi-text span {
 	font-size: 14px;
-	color: #ffffff;
+	color: var(--secondary-text-color);
 	display: block;
 }
 
 .blog-item .bi-text span i {
-	color: #f44949;
+	color: var(--red);
 }
 
 .load-more.blog-more {
@@ -1340,13 +1384,13 @@ Lang and currency
 }
 
 .bh-text .play-btn i {
-	color: #ffffff;
+	color: var(--white);
 	font-size: 28px;
 	margin-left: 6px;
 }
 
 .bh-text h2 {
-	color: #ffffff;
+	color: var(--white);
 	font-size: 60px;
 	font-weight: 700;
 	margin-top: 34px;
@@ -1355,7 +1399,7 @@ Lang and currency
 
 .bh-text ul li {
 	font-size: 14px;
-	color: #ffffff;
+	color: var(--white);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	list-style: none;
@@ -1370,7 +1414,7 @@ Lang and currency
 	top: 4px;
 	height: 14px;
 	width: 1px;
-	background: #6e6e6e;
+	background: var(--gray);
 	content: "";
 }
 
@@ -1415,20 +1459,20 @@ Lang and currency
 	top: 0;
 	width: 4px;
 	height: 100%;
-	background: #f44949;
+	background: var(--red);
 	content: "";
 }
 
 .bd-text .bd-quote p {
 	font-size: 18px;
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 500;
 	line-height: 30px;
 }
 
 .bd-text .bd-quote span {
 	font-size: 14px;
-	color: #f44949;
+	color: var(--red);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 600;
@@ -1449,7 +1493,7 @@ Lang and currency
 }
 
 .bd-text .bd-more-text h4 {
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 600;
 	margin-bottom: 22px;
 }
@@ -1465,7 +1509,7 @@ Lang and currency
 
 .bd-text .bd-tag-share {
 	overflow: hidden;
-	border-top: 1px solid #e5e5e5;
+	border-top: 1px solid var(--light);
 	padding-top: 20px;
 }
 
@@ -1477,8 +1521,8 @@ Lang and currency
 .bd-text .bd-tag-share .tag a {
 	display: inline-block;
 	font-size: 14px;
-	background: #ebebeb;
-	color: #6a6b7c;
+	background: var(--light);
+	color: var(--gray);
 	padding: 2px 17px 4px;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -1489,8 +1533,8 @@ Lang and currency
 }
 
 .bd-text .bd-tag-share .tag a:hover {
-	background: #f44949;
-	color: #ffffff;
+	background: var(--red);
+	color: var(--white);
 }
 
 .bd-text .bd-tag-share .s-share {
@@ -1499,7 +1543,7 @@ Lang and currency
 
 .bd-text .bd-tag-share .s-share span {
 	display: inline-block;
-	color: #171822;
+	color: var(--fotter-bg);
 	font-size: 16px;
 	margin-right: 12px;
 }
@@ -1507,18 +1551,18 @@ Lang and currency
 .bd-text .bd-tag-share .s-share a {
 	display: inline-block;
 	font-size: 16px;
-	color: #171822;
+	color: var(--fotter-bg);
 	width: 40px;
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
-	background: #ebebeb;
+	background: var(--light);
 	margin-left: 11px;
 	border-radius: 50%;
 }
 
 .bd-text .bd-tag-share .s-share a:hover {
-	color: #ffffff;
+	color: var(--white);
 }
 
 /*---------------------
@@ -1526,17 +1570,17 @@ Lang and currency
 -----------------------*/
 
 .comment-section h3 {
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 600;
 }
 
 .comment-form input {
 	width: 64%;
 	height: 46px;
-	/* background: #f4f6f8; */
+	/* background: var(--light); */
 	padding-left: 20px;
 	padding-right: 5px;
-	border: 2px solid #25c222;
+	border: 2px solid var(--green);
 	margin-bottom: 30px;
 	/* border-radius: 2px;	 */
 	/* border: 1px solid transparent; */
@@ -1546,36 +1590,36 @@ Lang and currency
 }
 
 .comment-form input::-webkit-input-placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .comment-form input::-moz-placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .comment-form input:-ms-input-placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .comment-form input::-ms-input-placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .comment-form input::placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .comment-form input:focus {
 	border: 1px solid #286922;
-	color: #171822;
+	color: var(--fotter-bg);
 }
 
 .comment-form textarea {
 	width: 88%;
 	height: 120px;
-	/* background: #f4f6f8; */
+	/* background: var(--light); */
 	padding-left: 20px;
-	border: 2px solid #25c222;
+	border: 2px solid var(--green);
 	padding-top: 12px;
 	padding-right: 5px;
 	margin-bottom: 32px;
@@ -1588,28 +1632,28 @@ Lang and currency
 }
 
 .comment-form textarea::-webkit-input-placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .comment-form textarea::-moz-placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .comment-form textarea:-ms-input-placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .comment-form textarea::-ms-input-placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .comment-form textarea::placeholder {
-	color: #a0a1b5;
+	color: var(--secondory-text-color);
 }
 
 .comment-form textarea:focus {
 	border: 1px solid #286922;
-	color: #171822;
+	color: var(--fotter-bg);
 }
 
 
@@ -1618,7 +1662,7 @@ Lang and currency
 -----------------------*/
 
 .related-post-section {
-	background: #f4f6f8;
+	background: var(--light);
 	padding-bottom: 70px;
 	padding-top: 90px;
 }
@@ -1667,37 +1711,37 @@ Lang and currency
 }
 
 .cc-text .section-title h2 {
-	color: #ffffff;
+	color: var(--white);
 }
 
 .cc-text .section-title p {
-	color: #ffffff;
+	color: var(--white);
 }
 
 .cc-text .cs-text .ct-address span {
-	color: #ffffff;
+	color: var(--white);
 	padding: 0 0 0 25px;
 }
 
 .cc-text .cs-text .ct-address p {
-	color: #ffffff;
+	color: var(--white);
 }
 
 .cc-text .cs-text ul li {
-	color: #ffffff;
+	color: var(--white);
 	padding: 0 0 0 25px;
 }
 
 .cc-text .cs-text ul li span {
-	color: #ffffff;
+	color: var(--white);
 }
 
 .cc-text .cs-text .ct-links span {
-	color: #ffffff;
+	color: var(--white);
 }
 
 .cc-text .cs-text .ct-links p {
-	color: #ffffff;
+	color: var(--white);
 }
 
 .cc-map {
@@ -1722,7 +1766,7 @@ Lang and currency
 
 .cc-map .map-hover i {
 	font-size: 30px;
-	color: #f44949;
+	color: var(--red);
 	position: absolute;
 	left: 50%;
 	top: -55px;
@@ -1734,10 +1778,10 @@ Lang and currency
 .cc-map .map-hover .map-hover-inner {
 	width: 264px;
 	text-align: center;
-	background: #ffffff;
+	background: var(--white);
 	padding: 27px 0 11px;
-	-webkit-box-shadow: 0px 0px 30px rgba(74, 101, 106, 0.2);
-	box-shadow: 0px 0px 30px rgba(74, 101, 106, 0.2);
+	-webkit-box-shadow: 0px 0px 30px var(--shadow);
+	box-shadow: 0px 0px 30px var(--shadow);
 }
 
 .cc-map .map-hover .map-hover-inner:after {
@@ -1746,7 +1790,7 @@ Lang and currency
 	top: -6px;
 	width: 30px;
 	height: 30px;
-	background: #ffffff;
+	background: var(--white);
 	content: "";
 	-webkit-transform: translateX(-15px) rotate(45deg);
 	-ms-transform: translateX(-15px) rotate(45deg);
@@ -1754,13 +1798,13 @@ Lang and currency
 }
 
 .cc-map .map-hover .map-hover-inner h5 {
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 600;
 	margin-bottom: 7px;
 }
 
 .cc-map .map-hover .map-hover-inner p {
-	color: #171822;
+	color: var(--fotter-bg);
 }
 
 /*---------------------
@@ -1971,8 +2015,12 @@ Lang and currency
 	}
 
 	.schedule-table-tab .nav-tabs .nav-item {
-		width: 33.33%;
+		width: 100%;
 	}
+
+	h5 {
+	font-size: 14px;
+}
 
 	.bd-text .bd-tag-share .tag {
 		float: none;
@@ -2004,7 +2052,7 @@ Lang and currency
 	}
 
 	.slicknav_nav {
-		background: #222;
+		background: var(--dark);
 		margin: 20px 0 0 0;
 	}
 
@@ -2023,14 +2071,14 @@ Lang and currency
 
 	.slicknav_nav a:hover {
 		border-radius: 0;
-		background: #f44949;
-		color: #ffffff;
+		background: var(--red);
+		color: var(--white);
 	}
 
 	.slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
-		background: #f44949;
-		color: #ffffff;
+		background: var(--red);
+		color: var(--white);
 	}
 
 	.member-item .mi-text {
@@ -2130,10 +2178,5 @@ Lang and currency
 
 	.section-title p {
 		font-size: 16px;
-	}
-
-	.breadcrumb-text h2 {
-		font-size: 30px;
-		margin-bottom: 20px;
 	}
 }

@@ -12,15 +12,15 @@
 }
 
 .pricing-section .section-title h2 {
-	color: #ffffff;
+	color: var(--white);
 }
 
 .pricing-section .section-title p {
-	color: #a0a1b5;
+	color: var(--secondory-text-color)
 }
 
 .price-item {
-	background: #ffffff;
+	background: var(--white);
 	text-align: center;
 	padding-top: 34px;
 	padding-bottom: 18px;
@@ -45,11 +45,11 @@
 }
 
 .price-item .tr-tag i {
-	color: #ffffff;
+	color: var(--white);
 }
 
 .price-item h4 {
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 26px;
@@ -63,7 +63,7 @@
 
 .price-item .pi-price h2 {
 	font-size: 60px;
-	color: #ffffff;
+	color: var(--white);
 	font-family: "Poppins", sans-serif;
 	font-weight: 600;
 	display: inline-block;
@@ -81,20 +81,20 @@
 .price-item ul li {
 	list-style: none;
 	font-size: 16px;
-	color: #6a6b7c;
+	color: var(--gray);
 	line-height: 38px;
 }
 
 .price-item .price-btn {
 	font-size: 16px;
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 600;
 	display: inline-block;
-	background: #ffffff;
+	background: var(--white);
 	padding: 10px 85px;
 	border-radius: 50px;
-	-webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
-	box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0px 6px 20px var(--grey);
+	box-shadow: 0px 6px 20px var(--grey);
 	position: relative;
 	bottom: -39px;
 	-webkit-transition: all 0.3s;
@@ -103,15 +103,15 @@
 }
 
 .price-item .price-btn:hover {
-	color: #ffffff;
+	color: var(--white);
 }
 
 .price-item .price-btn:hover span {
-	color: #ffffff;
+	color: var(--white);
 }
 
 .price-item .price-btn span {
-	color: #f44949;
+	color: var(--red);
 	position: relative;
 	top: 3px;
 	-webkit-transition: all 0.3s;

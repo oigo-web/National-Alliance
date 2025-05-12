@@ -20,13 +20,13 @@
 }
 
 .speaker-item .si-text .si-title h4 {
-	color: #171822;
+	color: var(--fotter-bg);
 	font-weight: 600;
 	margin-bottom: 13px;
 }
 
 .speaker-item .si-text .si-title span {
-	color: #f44949;
+	color: var(--red);
 	font-size: 16px;
 	display: block;
 }
@@ -38,24 +38,24 @@
 .speaker-item .si-text .si-social a {
 	display: inline-block;
 	font-size: 16px;
-	color: #171822;
+	color: var(--fotter-bg);
 	height: 40px;
 	width: 40px;
 	text-align: center;
 	line-height: 40px;
-	background: #ebebeb;
+	background: var(--light);
 	border-radius: 50%;
 	margin-right: 5px;
 }
 
 .speaker-item .si-text .si-social a:hover {
-	background: -o-linear-gradient(330deg, #ee8425, #f9488b);
-	background: linear-gradient(120deg, #ee8425, #f9488b);
-	color: #ffffff;
+	/* background: -o-linear-gradient(330deg, #ee8425, #f9488b);
+	background: linear-gradient(120deg, #ee8425, #f9488b); */
+	color: var(--white);
 }
 
 .speaker-item .si-text p {
-	color: #707070;
+	color: var(--secondary-text-color);
 	line-height: 26px;
 }
 
@@ -69,5 +69,5 @@
 }
 
 .si-social .fa {
-	color: black;
+	color: var(--text-color);
 }

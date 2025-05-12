@@ -7,9 +7,10 @@
 	margin: 0 auto;
 }
 
+
 .header-section {
 	height: 80px;
-	background-color: #fff;
+	background-color: var(--white);
 	width: 100%;
 
 	position: fixed;
@@ -17,12 +18,13 @@
 }
 
 .header-section.header-normal {
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid var(--line);
 }
 
-.logo {
+.logo h3{
 	font-size: 24px;
 	display: inline;
+	color: var(--black);
 }
 
 .nav-menu {
@@ -46,17 +48,88 @@
 .dropdown {
 	position: absolute;
 	width: 180px;
-	background: #ffffff;
+	background: var(--white);
 	z-index: 99;
 	left: 0;
 	top: -10px;
 	opacity: 0;
 	visibility: hidden;
-	-webkit-box-shadow: 4px 13px 30px rgba(0, 0, 0, 0.15);
-	box-shadow: 4px 13px 30px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 4px 13px 30px var(--grey);
+	box-shadow: 4px 13px 30px var(--grey);
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+}
+
+/* DURK MODE BTN */
+.dark-mode-btn {
+    order: 9;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 51px;
+    height: 26px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: var(--gray);
+}
+
+.dark-mode-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--white);
+    transition: left 0.2s ease-in;
+}
+
+.dark-mode-btn--active::before {
+    left: 24px;
+}
+
+.dark-mode-btn__icon {
+    position: relative;
+    z-index: 9;
+}
+/* ========================= */
+
+.dark-mode-btn {
+    order: 9;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 51px;
+    height: 26px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #272727;
+}
+
+.dark-mode-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    /* background-color: var(--white); */
+		background-color: white;
+    transition: left 0.2s ease-in;
+}
+
+.dark-mode-btn--active::before {
+    left: 26px;
+}
+
+.dark-mode-btn__icon {
+    position: relative;
+    z-index: 9;
 }
 
 @media(max-width: 990px) {}
@@ -83,7 +156,7 @@ ol {
 }
 
 ul li .dropdown li a:hover {
-	color: #f44949;
+	color: var(--green);
 }
 
 ul li .dropdown li a:after {
@@ -107,7 +180,7 @@ ul li:hover>a:after {
 
 .mainmenu ul li a {
 	font-size: 11px;
-	color: #171822;
+	color: var(--black);
 	text-transform: uppercase;
 	font-weight: 600;
 	padding: 10px 0;
@@ -121,7 +194,7 @@ ul li a:after {
 	bottom: 6px;
 	height: 2px;
 	width: 100%;
-	background: #25c222;
+	background: var(--green);
 	content: "";
 	opacity: 0;
 	-webkit-transition: all 0.3s;
@@ -135,7 +208,7 @@ ul li a:after {
 
 .langs {
 	display: inline;
-	color: black;
+	color: var(--black);
 	list-style: none;
 	text-decoration: none;
 }
@@ -145,27 +218,29 @@ ul li a:after {
 	top: 20px;
 	right: 20px;
 	display: flex;
-	gap: 18px;
+	gap: 8px;
 }
 
 .icone__youtube,
 fill {
-	color: #222;
+	color: var(--black);
 	transition: all .2s ease 0s;
 }
 
 .icone__youtube:hover {
-	color: #25c222;
+	color: var(--green);
 }
 
-.switcher__theme {
-	color: #171822;
+
+
+/* .switcher__theme {
+	color: var(--fotter-bg);
 	transition: all .2s ease 0s;
 }
 
 .switcher__theme:hover {
-	color: #25c222;
-}
+	color: var(--green);
+} */
 
 
 /* Tablet */
@@ -185,14 +260,14 @@ fill {
 
 	/* .slicknav_menutext,
 	span {
-		color: #171822;
+		color: var(--fotter-bg);
 	} */
 
 
-	.theme-tags {
+	/* .theme-tags {
 		top: 8px;
 		right: 30px;
-	}
+	} */
 
 	.slicknav_menu {
 		display: block;
@@ -215,7 +290,7 @@ fill {
 
 	.slicknav_nav {
 		text-align: left;
-		background: #222;
+		background: var(--dark);
 	}
 
 	.dropdown {
@@ -233,11 +308,11 @@ fill {
 		-webkit-transition: all 0.3s;
 		-o-transition: all 0.3s;
 		transition: all 0.3s;
-		color: #fff;
+		color: var(--white);
 	}
 
 	ul .dropdown a {
-		color: #222;
+		color: var(--dark);
 	}
 
 	ul,
@@ -257,8 +332,8 @@ fill {
 
 	.slicknav_nav a:hover {
 		border-radius: 0;
-		background: #f44949;
-		color: #ffffff;
+		background: var(--red);
+		color: var(--white);
 	}
 
 	ul li a:after {
