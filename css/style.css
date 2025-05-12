@@ -110,6 +110,29 @@ html, body {
 
 
 
+
+:root {
+	--white: #fff;
+	--black: #6a6b7c;
+	--pureblack: #000;
+	--green: #53c90f;
+
+	--text-color: var(--black);
+	--dark-bg: var(--black);
+
+	--accent: var(--green);
+
+	/* Light mode */
+	--page-bg: var(--white);
+	--text-color: var(--black);
+}
+
+html, body {
+	/* light mode */
+	background-color: var(--white);
+	color: var(--text-color);
+}
+
 /*---------------------
   Conter
 -----------------------*/
