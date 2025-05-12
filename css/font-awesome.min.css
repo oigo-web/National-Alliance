@@ -814,7 +814,7 @@
 }
 
 .speakers-icone {
-	color: #f44949;
+	color: var(--red);
 }
 
 .fa-github:before {

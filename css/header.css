@@ -17,7 +17,7 @@
 }
 
 .header-section.header-normal {
-	border-bottom: 1px solid var(--light);
+	border-bottom: 1px solid var(--gray);
 }
 
 .logo {
@@ -52,8 +52,8 @@
 	top: -10px;
 	opacity: 0;
 	visibility: hidden;
-	-webkit-box-shadow: 4px 13px 30px rgba(0, 0, 0, 0.15);
-	box-shadow: 4px 13px 30px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 4px 13px 30px var(--grey);
+	box-shadow: 4px 13px 30px var(--grey);
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
@@ -69,7 +69,7 @@
     height: 26px;
     padding: 5px;
     border-radius: 50px;
-    background-color: #272727;
+    background-color: var(--gray);
 }
 
 .dark-mode-btn::before {
@@ -195,12 +195,12 @@ fill {
 }
 
 /* .switcher__theme {
-	color: #171822;
+	color: var(--fotter-bg);
 	transition: all .2s ease 0s;
 }
 
 .switcher__theme:hover {
-	color: #25c222;
+	color: var(--green);
 } */
 
 
@@ -221,7 +221,7 @@ fill {
 
 	/* .slicknav_menutext,
 	span {
-		color: #171822;
+		color: var(--fotter-bg);
 	} */
 
 
@@ -251,7 +251,7 @@ fill {
 
 	.slicknav_nav {
 		text-align: left;
-		background: #222;
+		background: var(--dark);
 	}
 
 	.dropdown {
@@ -269,11 +269,11 @@ fill {
 		-webkit-transition: all 0.3s;
 		-o-transition: all 0.3s;
 		transition: all 0.3s;
-		color: #fff;
+		color: var(--white);
 	}
 
 	ul .dropdown a {
-		color: #222;
+		color: var(--dark);
 	}
 
 	ul,
@@ -293,8 +293,8 @@ fill {
 
 	.slicknav_nav a:hover {
 		border-radius: 0;
-		background: #f44949;
-		color: #ffffff;
+		background: var(--red);
+		color: var(--white);
 	}
 
 	ul li a:after {
