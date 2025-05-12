@@ -49,13 +49,13 @@
 }
 
 .speaker-item .si-text .si-social a:hover {
-	background: -o-linear-gradient(330deg, #ee8425, #f9488b);
-	background: linear-gradient(120deg, #ee8425, #f9488b);
+	/* background: -o-linear-gradient(330deg, #ee8425, #f9488b);
+	background: linear-gradient(120deg, #ee8425, #f9488b); */
 	color: var(--white);
 }
 
 .speaker-item .si-text p {
-	color: #707070;
+	color: var(--secondary-text-color);
 	line-height: 26px;
 }
 
@@ -69,5 +69,5 @@
 }
 
 .si-social .fa {
-	color: black;
+	color: var(--text-color);
 }

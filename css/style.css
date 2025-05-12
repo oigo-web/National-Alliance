@@ -73,30 +73,35 @@
   --gray: #676767;
   --green: #4c9323;
 	--light: #f8f9fa;
-	--dark: #343a40;
+	--dark: #25292d;
 	--red: #dc3545;
 	--fotter-bg: #171822;
-	--secondory-text-color: #a0a1b5;
-	--shadow: #4f548b26;
-	/* --second-shadow: var(--shadow); */
+	--shadow: #bebbbb;
+	--line: #e8e8e8;
 	
   /* Светлая тема */
   --page-bg: var(--light);
-  --text-color: var(--gray);
+  --text-color: var(--dark);
   --btn-bg: var(--gray);
   --btn-knob: var(--white);
+	--green: #54ad31;
 }
 
 [data-theme="dark"] {
-  --page-bg: var(--black);
+  --page-bg: var(--dark);
   --text-color: var(--white);
-  --btn-bg: var(--white);
-  --btn-knob: var(--black);
+  --btn-bg: var(--gray);
+  --btn-knob: #eee;
+  --green: #34741b;
+  --red: #ff6b6b;
+  --footer-bg: #0e0f1a;
+  --secondary-text-color: #d2d2d2;
+  --shadow: #00000033;
 }
 
 html, body {
   background-color: var(--page-bg);
-  color: var(--black);
+  color: var(--text-color);
   transition: 0.3s;
 }
 
@@ -360,12 +365,13 @@ html, body {
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link.active p {
-	color: var(--white);
+	color: var(--btn-bg);
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link h5 {
 	color: var(--white);
 	font-weight: 600;
+	padding: 10px;
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link p {
@@ -404,7 +410,7 @@ html, body {
 }
 
 .schedule-tab .st-content .sc-text h4 {
-	color: var(--fotter-bg);
+	color: var(--text-color);
 	font-weight: 600;
 	margin-bottom: 10px;
 }
@@ -413,7 +419,7 @@ html, body {
 	list-style: none;
 	display: inline-block;
 	font-size: 16px;
-	color: var(--gray);
+	color: var(--secondary-text-color);
 	margin-right: 25px;
 	position: relative;
 }
@@ -441,7 +447,7 @@ html, body {
 .schedule-tab .st-content .sc-widget li {
 	list-style: none;
 	font-size: 16px;
-	color: var(--gray);
+	color: var(--secondary-text-color);
 	line-height: 32px;
 	position: relative;
 	padding: 6px 0 0 22px;
@@ -888,7 +894,7 @@ Lang and currency
 
 .breadcrumb-text h2 {
 	font-size: 36px;
-	color: var(--fotter-bg);
+	color: var(--te);
 	font-weight: 600;
 	margin-bottom: 30px;
 }
@@ -1019,7 +1025,7 @@ Lang and currency
 }
 
 .story-item .si-text h4 {
-	color: var(--fotter-bg);
+	color: var(--text-color);
 	font-weight: 600;
 	line-height: 36px;
 	margin: 26px 0 0 0;
@@ -1281,8 +1287,8 @@ Lang and currency
 	position: relative;
 	border-radius: 10px;
 	margin-bottom: 30px;
-	-webkit-box-shadow: 0px 0px 30px var(--gray);
-	box-shadow: 0px 0px 30px var(--gray);
+	-webkit-box-shadow: 0px 0px 30px var(--shadow);
+	box-shadow: 0px 0px 30px var(--shadow);
 }
 
 .blog-item .bi-tag {
@@ -1344,7 +1350,7 @@ Lang and currency
 
 .blog-item .bi-text span {
 	font-size: 14px;
-	color: var(--white);
+	color: var(--secondary-text-color);
 	display: block;
 }
 
@@ -2009,8 +2015,12 @@ Lang and currency
 	}
 
 	.schedule-table-tab .nav-tabs .nav-item {
-		width: 33.33%;
+		width: 100%;
 	}
+
+	h5 {
+	font-size: 14px;
+}
 
 	.bd-text .bd-tag-share .tag {
 		float: none;
@@ -2120,7 +2130,7 @@ Lang and currency
 	}
 
 	.schedule-tab .nav-tabs .nav-item {
-		width: 33.33%;
+		width: 100%;
 	}
 
 	.member-item {

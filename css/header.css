@@ -7,6 +7,7 @@
 	margin: 0 auto;
 }
 
+
 .header-section {
 	height: 80px;
 	background-color: var(--white);
@@ -17,12 +18,13 @@
 }
 
 .header-section.header-normal {
-	border-bottom: 1px solid var(--gray);
+	border-bottom: 1px solid var(--line);
 }
 
-.logo {
+.logo h3{
 	font-size: 24px;
 	display: inline;
+	color: var(--black);
 }
 
 .nav-menu {
@@ -143,7 +145,7 @@ ul li:hover>a:after {
 
 .mainmenu ul li a {
 	font-size: 11px;
-	color: var(--pureblack);
+	color: var(--black);
 	text-transform: uppercase;
 	font-weight: 600;
 	padding: 10px 0;
@@ -171,7 +173,7 @@ ul li a:after {
 
 .langs {
 	display: inline;
-	color: var(--pureblack);
+	color: var(--black);
 	list-style: none;
 	text-decoration: none;
 }
@@ -181,18 +183,20 @@ ul li a:after {
 	top: 20px;
 	right: 20px;
 	display: flex;
-	gap: 18px;
+	gap: 8px;
 }
 
 .icone__youtube,
 fill {
-	color: var(--pureblack);
+	color: var(--black);
 	transition: all .2s ease 0s;
 }
 
 .icone__youtube:hover {
 	color: var(--green);
 }
+
+
 
 /* .switcher__theme {
 	color: var(--fotter-bg);

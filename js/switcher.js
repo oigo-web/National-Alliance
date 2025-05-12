@@ -2,48 +2,48 @@
 
 const btnDarkMode = document.querySelector(".dark-mode-btn");
 
-//  1. Test
+// 1. Проверка системной темы
 if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
     btnDarkMode.classList.add("dark-mode-btn--active");
-    document.body.classList.add("dark");
+    document.documentElement.setAttribute("data-theme", "dark");
 }
 
-// 2. Checked the dark mode in localStorage
+// 2. Проверка сохранённой темы в localStorage
 if (localStorage.getItem('darkMode') === 'dark') {
     btnDarkMode.classList.add("dark-mode-btn--active");
-    document.body.classList.add("dark");
+    document.documentElement.setAttribute("data-theme", "dark");
 } else if (localStorage.getItem("darkMode") === "light") {
     btnDarkMode.classList.remove("dark-mode-btn--active");
-    document.body.classList.remove("dark");
+    document.documentElement.setAttribute("data-theme", "light");
 }
 
-
-// If we change system proparty, we change theam
-window
-.matchMedia("(prefers-color-scheme: dark)")
-.addEventListener('change', (event) => {
+// 3. Реакция на смену системной темы
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', (event) => {
     const newColorScheme = event.matches ? "dark" : 'light';
 
-    if (newColorScheme === 'dark'){
+    if (newColorScheme === 'dark') {
         btnDarkMode.classList.add("dark-mode-btn--active");
-        document.body.classList.add("dark");
+        document.documentElement.setAttribute("data-theme", "dark");
         localStorage.setItem("darkMode", "dark");
     } else {
         btnDarkMode.classList.remove("dark-mode-btn--active");
-        document.body.classList.remove("dark");
+        document.documentElement.setAttribute("data-theme", "light");
         localStorage.setItem("darkMode", "light");
     }
-})
+});
 
-// Turn On the dark mode with button 
+// 4. Переключатель темы по кнопке
 btnDarkMode.onclick = function () {
-    btnDarkMode.classList.toggle("dark-mode-btn--active");
-    const isDark = document.body.classList.toggle('dark');
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
 
     if (isDark) {
-        localStorage.setItem('darkMode', 'dark')
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("darkMode", "light");
+        btnDarkMode.classList.remove("dark-mode-btn--active");
     } else {
-        localStorage.setItem('darkMode', 'light');
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("darkMode", "dark");
+        btnDarkMode.classList.add("dark-mode-btn--active");
     }
 }
 // ===============================================================
