@@ -31,6 +31,10 @@ p.sub-title {
 	text-align: center;
 }
 
+p.copy-sub {
+		color: var(--copyright);
+}
+
 .col-lg-12 {
 	text-align: center;
 	/* margin-top: 30px; */

@@ -85,6 +85,7 @@
   --btn-bg: var(--gray);
   --btn-knob: var(--white);
 	--green: #54ad31;
+	--copyright: var(--line);
 }
 
 [data-theme="dark"] {
